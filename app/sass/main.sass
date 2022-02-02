@@ -1,0 +1,1177 @@
+@import config.sass
+
+.no-gutters
+   @include media-breakpoint-down(lg)
+      padding: 0
+
+.blue
+   color: $blue
+   display: inline-block
+
+.bgc-gray
+   background-color: #F2F4F6
+
+.header-top
+   padding: rem(20px) 0 rem(17px) 0
+   @include media-breakpoint-down(lg)
+      padding: rem(10px) 0
+   &__btn-all
+      display: inline-block
+   &__phone
+      display: inline-block
+   &__btn
+      cursor: pointer
+      font-family: $font-bebas-cyr
+      display: inline-block
+      font-size: rem(16px)
+      text-transform: uppercase
+      text-align: center
+      color: #fff
+      position: relative
+      padding: rem(10px) rem(20px)
+      user-select: none
+      @media screen and ( max-width: 1150px )
+         padding: rem(10px) rem(15px)
+      @media screen and ( max-width: 1110px )
+         font-size: rem(14px)
+      &:hover
+         &::after
+            background-color: #0D90E8
+            +tr
+      &:active
+         &::after
+            background-color: $red
+            +tr
+      span
+         position: relative
+         z-index: 2
+      &::after
+         content: ''
+         background-color: $blue
+         width: 100%
+         position: absolute
+         left: 0
+         bottom: 0
+         height: 100%
+         display: inline-block
+         z-index: 1
+         transform: skewX(165deg)
+         +tr
+   &__btn-red
+      &:hover
+         &::after
+            background-color: $red
+            box-shadow: 0px 4px 41px rgba(242, 21, 48, 0.99)
+      &:active
+         &::after
+            background-color: $blue
+      &::after
+
+         background-color: $red
+   &__wr
+      float: right
+   .phone
+      margin-left: rem(5px)
+
+.logo
+   vertical-align: middle
+   display: inline-block
+   width: rem(236px)
+   margin-right: rem(70px)
+   @media screen and ( max-width: 1400px )
+      margin-right: rem(50px)
+   @media screen and ( max-width: 1340px )
+      margin-right: rem(20px)
+   @media screen and ( max-width: 1280px )
+      width: rem(135px)
+   @include media-breakpoint-down(lg)
+      float: right
+      margin-right: 0
+   &__img
+      +img-resp
+
+.nav
+   vertical-align: middle
+   display: inline-block
+   &__item
+      margin-right: rem(50px)
+      display: inline-block
+      @media screen and ( max-width: 1435px )
+         margin-right: rem(40px)
+      @media screen and ( max-width: 1400px )
+         margin-right: rem(30px)
+      @media screen and ( max-width: 1350px )
+         margin-right: rem(20px)
+      @media screen and ( max-width: 1100px )
+         margin-right: rem(10px)
+   &__item:nth-last-child(1)
+      margin-right: 0
+   &__link
+      font-size: rem(20px)
+      font-family: $font-bebas-cyr
+      text-transform: uppercase
+      border-bottom: 4px solid #fff
+      padding-bottom: rem(25px)
+      @media screen and ( max-width: 1350px )
+         font-size: rem(18px)
+      @media screen and ( max-width: 1100px )
+         font-size: rem(16px)
+      +tr
+      &:hover
+         color: $blue
+         +tr
+   &__item-active
+      .nav__link
+         color: $blue
+         border-bottom: 4px solid $blue
+
+.phone
+   font-family: $font-bold
+
+.btn
+   letter-spacing: 0.14em
+   height: rem(56px)
+   cursor: pointer
+   font-family: $font-bebas-cyr
+   display: inline-block
+   font-size: rem(18px)
+   line-height: rem(20px)
+   text-transform: uppercase
+   text-align: center
+   color: #fff
+   border: none
+   background-color: $red
+   padding: rem(15px) rem(40px)
+   @include media-breakpoint-down(md)
+      height: auto
+      padding: rem(10px) rem(40px)
+      font-size: rem(16px)
+   +tr
+   &:hover
+      box-shadow: 0px 4px 41px rgba(242, 21, 48, 0.99)
+      +tr
+   &:active
+      background-color: $blue
+
+.btn-blue
+   background-color: $blue
+   &:hover
+      background-color: #F21530
+      box-shadow: none
+   &:active
+      background-color: #FF0000
+
+.btn-red
+   background-color: $red
+   font-size: rem(20px)
+
+.burger
+   display: inline-block
+   position: relative
+   img:nth-child(2)
+      display: none
+
+.burger-active
+   img:nth-child(1)
+      display: none
+   img:nth-child(2)
+      display: block
+
+.menu-mobile
+   padding-top: rem(30px)
+   left: 0
+   top: rem(40px)
+   position: fixed
+   z-index: 999
+   width: 100%
+   height: 100%
+   background-color: #ffff
+   visibility: hidden
+   opacity: 0
+   transform: translateY(50px)
+   +tr
+   &__nav-wr
+      margin-bottom: rem(20px)
+   &__nav-item
+      display: block
+   &__nav-link
+      display: block
+      padding: rem(10px) rem(20px)
+      font-family: $font-bebas-cyr
+      font-size: rem(20px)
+   &__nav-item-active
+      background-color: #ECEFF5
+      .menu-mobile__nav-link
+         color: $blue
+   .header-top__btn-all
+      margin-bottom: rem(20px)
+      .header-top__btn
+         position: relative
+         left: rem(-10px)
+         width: rem(260px)
+         text-align: left
+         display: block
+         margin-bottom: rem(10px)
+         font-size: rem(18px) !important
+         padding: rem(10px) rem(20px) rem(10px) rem(30px)
+         img
+            position: absolute
+            z-index: 2
+            right: rem(15px)
+            top: 50%
+            transform: translateY(-50%)
+      .header-top__btn-red
+         width: rem(247px)
+         img
+            right: rem(25px)
+   .phone
+      margin-left: rem(20px)
+      font-size: rem(20px)
+      margin-bottom: rem(50px)
+
+.menu-mobile-active
+   visibility: visible
+   opacity: 1
+   transform: translateY(0)
+   +tr
+
+.body-fix
+   overflow: hidden
+
+.modal
+   .modal-dialog
+      max-width: rem(526px)
+      .modal-content
+         position: relative
+         padding: rem(45px)
+         border-radius: 0
+         border: none
+         @include media-breakpoint-down(md)
+            padding: rem(15px)
+         .input
+            display: block
+            margin-bottom: rem(20px)
+            width: 100%
+            @include media-breakpoint-down(md)
+               margin-bottom: rem(10px)
+         .btn
+            margin-top: rem(10px)
+            width: 100%
+   &__close
+      cursor: pointer
+      position: absolute
+      right: rem(20px)
+      top: rem(20px)
+      @include media-breakpoint-down(md)
+         top: rem(10px)
+         right: rem(10px)
+      svg
+         +tr
+      &:hover
+         svg
+            path
+               stroke: $gray-light
+               +tr
+   &__title
+      font-family: $font-bebas-regular
+      text-transform: uppercase
+      font-size: rem(30px)
+      margin-bottom: rem(35px)
+      @include media-breakpoint-down(md)
+         text-align: center
+         margin-top: rem(40px)
+   &__thanks
+      margin-right: rem(20px)
+      text-align: center
+   &__thanks-img
+      margin-bottom: rem(20px)
+   &__thanks-title
+      text-transform: uppercase
+      font-family: $font-bebas-cyr
+      font-size: rem(30px)
+      margin-bottom: rem(5px)
+   &__thanks-text
+      display: inline-block
+      width: rem(350px)
+      font-family: $font-light
+      font-size: rem(16px)
+      color: $gray-light
+      margin-bottom: rem(30px)
+
+.input
+   height: rem(56px)
+   padding: rem(20px) rem(25px)
+   font-size: rem(16px)
+   border-radius: 0
+   border: 1px solid #DFDFDF
+   +tr
+   @include media-breakpoint-down(md)
+      height: rem(37px)
+   &::placeholder
+      font-family: $font-light
+
+.textarea
+   height: rem(150px)
+   @include media-breakpoint-down(md)
+      height: rem(110px)
+
+.breadcrumb
+   &__back
+      color: #B2BCCB
+      font-size: rem(11px)
+      font-family: $font-regular
+      svg, span
+         vertical-align: middle
+      svg
+         margin-right: rem(5px)
+   &__wr
+      margin-top: rem(80px)
+      margin-bottom: rem(30px)
+      @include media-breakpoint-down(md)
+         margin-top: rem(50px)
+      @include media-breakpoint-down(sm)
+         margin-top: rem(30px)
+         margin-bottom: rem(10px)
+   &__item
+      display: inline-block
+   &__link
+      position: relative
+      display: inline-block
+      color: #AEB3BA
+      font-family: $font-light
+      font-size: rem(14px)
+      &:hover
+         color: #AEB3BA
+      &::after
+         content: ''
+         margin: 0 rem(20px)
+         vertical-align: middle
+         width: rem(12px)
+         height: rem(1px)
+         background-color: #AEB3BA
+         display: inline-block
+         position: relative
+   &__item:nth-last-child(1) &__link
+      color: $blue
+      &::after
+         width: 0
+         height: 0
+
+.contact
+   margin-bottom: rem(180px)
+   @include media-breakpoint-down(lg)
+      margin-bottom: 0
+   &__title
+      font-size: rem(52px)
+      font-family: $font-bebas-regular
+      text-transform: uppercased
+      @include media-breakpoint-down(md)
+         font-size: rem(40px)
+      @include media-breakpoint-down(sm)
+         font-size: rem(22px)
+   &__item
+      padding: rem(40px) 0 rem(50px) 0
+      border-bottom: 2px solid #F1F1F1
+      @include media-breakpoint-down(md)
+         padding: rem(30px) 0 rem(40px) 0
+      @include media-breakpoint-down(md)
+         padding: rem(20px) 0 rem(20px) 0
+   &__item:nth-child(2)
+      border-bottom: 0
+      @include media-breakpoint-down(sm)
+         margin-bottom: rem(20px)
+   &__sub-title
+      color: $blue
+      font-family: $font-bebas-bold
+      font-size: rem(22px)
+      text-transform: uppercase
+      display: inline-block
+      vertical-align: top
+   &__text
+      display: inline-block
+   &__text-2
+      display: inline-block
+      @include media-breakpoint-down(sm)
+         margin-bottom: rem(30px)
+      a
+         margin-bottom: rem(10px)
+         display: block
+         @include media-breakpoint-down(sm)
+            margin-bottom: 0
+      a:nth-last-child(1)
+         margin-bottom: 0
+   &__social
+      display: inline-block
+      float: right
+      @media screen and ( max-width: 1200px )
+         display: block
+         float: inherit
+         margin-top: rem(10px)
+      .social
+         @include media-breakpoint-down(md)
+            display: flex
+            justify-content: space-between
+   .btn-border
+      @include media-breakpoint-down(sm)
+         width: 100%
+   &__map
+      position: relative
+      overflow: hidden
+      margin-top: rem(35px)
+      height: rem(335px)
+      width: 100%
+      @media screen and ( max-width: 1200px )
+         height: rem(420px)
+      @include media-breakpoint-down(lg)
+         height: rem(335px)
+      @include media-breakpoint-down(md)
+         height: rem(300px)
+      #map
+         width: 100%
+         height: 100%
+      @include media-breakpoint-down(sm)
+         .social
+            display: flex
+            justify-content: space-between
+.social
+   &__item
+      position: relative
+      display: inline-block
+      background-color: #EAEFF3
+      width: rem(50px)
+      height: rem(50px)
+      border-radius: 100%
+      margin-right: rem(20px)
+      +tr
+      &:hover
+         background-color: $blue
+         +tr
+         svg
+            path
+               fill: #fff
+               +tr
+      &:active
+         background-color: #0D90E8
+      svg
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)
+         +tr
+
+.btn-border
+   cursor: pointer
+   font-family: $font-bebas-regular
+   font-size: rem(18px)
+   border: 1px solid $blue
+   text-transform: uppercase
+   text-align: center
+   display: inline-block
+   width: rem(350px)
+   padding: rem(25px) 0
+   color: $blue
+   background-color: inherit
+   letter-spacing: 0.14em
+   +tr
+   @include media-breakpoint-down(sm)
+      font-size: rem(14px)
+      padding: rem(15px) 0
+   &:hover
+      background-color: $blue
+      color: #fff
+      +tr
+   &:active
+      background-color: #0D90E8
+
+.footer
+   background-color: #333333
+   padding: rem(50px) 0 rem(70px)
+   @include media-breakpoint-down(lg)
+      padding: rem(30px) 0 rem(50px)
+   @include media-breakpoint-down(md)
+      padding: rem(20px) 0 rem(20px)
+   &__logo
+      display: inline-block
+      width: rem(240px)
+      height: auto
+      margin-bottom: rem(40px)
+      @include media-breakpoint-down(md)
+      margin-bottom: rem(20px)
+      img
+         width: 100%
+         height: auto
+   &__social
+      margin-bottom: rem(20px)
+      @include media-breakpoint-down(lg)
+         margin-bottom: rem(10px)
+      a
+         background-color: #333333
+         border: 1px solid #707070
+         +tr
+         @media screen and ( max-width: 1200px )
+            width: rem(44px)
+            height: rem(44px)
+            margin-right: rem(10px)
+         svg
+            path
+               fill: #707070
+   &__mail
+      font-family: $font-light
+      font-size: rem(14px)
+      color: #D0D0D0
+      display: block
+      @include media-breakpoint-down(lg)
+         margin-bottom: rem(20px)
+      &:hover
+         color: #D0D0D0
+   &__menu-wr
+      display: flex
+      justify-content: space-between
+      margin-left: rem(80px)
+      @include media-breakpoint-down(lg)
+         display: block
+         margin-left: 0
+   &__menu
+      display: inline-block
+      vertical-align: top
+      margin-right: rem(10px)
+      @include media-breakpoint-down(lg)
+         display: block
+         margin-right: 0
+         margin-bottom: rem(20px)
+   &__menu-title
+      font-size: rem(14px)
+      font-family: $font-medium
+      color: #fff
+      text-transform: uppercase
+      margin-bottom: rem(20px)
+      @include media-breakpoint-down(lg)
+         margin-bottom: rem(10px)
+   &__menu-item
+      margin-bottom: rem(10px)
+   &__menu-link
+      font-family: $font-regular
+      font-size: rem(14px)
+      display: inline-block
+      color: #C4C4C4
+      text-transform: uppercase
+      +tr
+      &:hover
+         color: #fff
+         +tr
+      &:active
+         color: $blue
+   &__phone
+      display: block
+      color: #fff
+      font-size: rem(32px)
+      line-height: rem(32px)
+      font-family: $font-bold
+      margin-bottom: rem(60px)
+      @media screen and ( max-width: 1200px )
+         font-size: rem(25px)
+         line-height: rem(25px)
+      @include media-breakpoint-down(md)
+         font-size: rem(22px)
+         margin-bottom: rem(20px)
+      &:hover
+         color: #fff
+   &__btn
+      .btn-border
+         width: rem(220px)
+         border-color: #707070
+         color: #707070
+         padding: rem(10px) 0
+         @include media-breakpoint-down(sm)
+            width: 100%
+         &:hover
+            color: #fff
+   &__wr
+      text-align: right
+      @include media-breakpoint-down(lg)
+         text-align: left
+
+.footer-bottom
+   padding: rem(10px) 0
+   background-color: #252525
+   &__left
+      text-align: left
+      @include media-breakpoint-down(lg)
+   &__text
+      color: #848484
+      font-size: rem(14px)
+      font-family: $font-light
+      @include media-breakpoint-down(lg)
+         margin-bottom: rem(10px)
+   &__right
+      text-align: right
+      @include media-breakpoint-down(lg)
+         text-align: left
+   &__dev
+      span
+         color: #848484
+      svg
+         margin-left: rem(5px)
+         path
+            +tr
+         &:hover
+            path
+               fill: #fff
+               +tr
+         &:hover
+            path
+               fill: #C8C8C8
+
+.block-contact-form
+   margin-bottom: rem(175px)
+   padding: rem(60px) 0
+   position: relative
+   background-color: #333333
+   @include media-breakpoint-down(lg)
+      overflow: hidden
+      padding: 0
+      padding-top: rem(60px)
+      margin-bottom: rem(130px)
+   @include media-breakpoint-down(md)
+      padding-top: rem(40px)
+      margin-bottom: rem(100px)
+   @include media-breakpoint-down(md)
+      margin-bottom: rem(50px)
+   &__wr, &__wr-2, &__wr-3
+      @include media-breakpoint-down(lg)
+         text-align: center
+   &__wr-2
+      @include media-breakpoint-down(sm)
+         padding: 0 rem(20px)
+   .contac-form
+      position: relative
+      z-index: 2
+      width: rem(313px)
+      @include media-breakpoint-down(lg)
+         margin-bottom: rem(20px)
+         display: inline-block
+      @include media-breakpoint-down(sm)
+         width: 100%
+   .input
+      background-color: inherit
+      width: 100%
+      border: 1px solid #dfdfdf
+      margin-bottom: rem(20px)
+      color: #fff
+      +tr
+      &::placeholder
+         color: #A5A5A5
+      &:hover
+         background-color: #545454 !important
+         +tr
+      &:focus
+         color: #000
+         background-color: #fff !important
+         +tr
+   .btn
+      margin-top: rem(10px)
+      width: 100%
+   &__title
+      position: relative
+      z-index: 2
+      font-size: rem(46px)
+      line-height: rem(46px)
+      color: #fff
+      text-transform: uppercase
+      font-family: $font-bebas-bold
+      margin-bottom: rem(15px)
+      @include media-breakpoint-down(lg)
+         font-family: $font-bebas-regular
+         width: rem(300px)
+         display: inline-block
+      @include media-breakpoint-down(sm)
+         font-size: rem(22px)
+         line-height: rem(30px)
+         width: rem(140px)
+   &__img-wr
+      position: relative
+      width: 100%
+      height: 100%
+   &__img
+      position: absolute
+      bottom: 0
+      right: 0
+      z-index: 2
+      width: rem(930px)
+      @media screen and ( max-width: 1300px )
+         width: rem(800px)
+      @media screen and ( max-width: 1200px )
+         width: rem(750px)
+      @media screen and ( max-width: 1150px )
+         width: rem(650px)
+      @include media-breakpoint-down(lg)
+         position: relative
+         display: inline-block
+      @include media-breakpoint-down(md)
+         width: 100%
+      img
+         +img-resp
+   &__bgc-img
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      z-index: 1
+      width: 100%
+      @include media-breakpoint-down(lg)
+         top: 13%
+      img
+         +img-resp
+         @include media-breakpoint-down(sm)
+            width: 140%
+
+.services
+   padding-top: rem(130px)
+   padding-bottom: rem(130px)
+   @include media-breakpoint-down(lg)
+      padding-top: rem(100px)
+      padding-bottom: rem(100px)
+   @include media-breakpoint-down(md)
+      padding-top: rem(70px)
+      padding-bottom: rem(70px)
+   @include media-breakpoint-down(sm)
+      padding-top: rem(50px)
+      padding-bottom: rem(20px)
+   .section-title
+      margin-bottom: rem(40px)
+      @include media-breakpoint-down(md)
+         margin-bottom: rem(20px)
+   &__item
+      display: block
+      cursor: pointer
+      margin-bottom: rem(55px)
+      @include media-breakpoint-down(md)
+         margin-bottom: rem(20px)
+      &:hover
+         img
+            transform: scale(1.1)
+            +tr
+         .services__title
+            color: $blue
+            +tr
+            &::after
+               visibility: visible
+               transform: translateX(0px)
+               opacity: 1
+      &:active
+         .services__img
+            &::after
+               opacity: .4
+               +tr
+   &__img
+      overflow: hidden
+      width: 100%
+      height: rem(200px)
+      margin-bottom: rem(26px)
+      position: relative
+      @include media-breakpoint-down(md)
+         margin-bottom: rem(15px)
+      &::after
+         content: ''
+         position: absolute
+         width: 100%
+         height: 100%
+         left: 0
+         top: 0
+         background-color: #000
+         opacity: 0
+         +tr
+      img
+         +img-resp
+         object-fit: cover
+         transform: scale(1)
+         +tr
+   &__title
+      position: relative
+      font-family: $font-bebas-bold
+      text-transform: uppercase
+      font-size: rem(34px)
+      @include media-breakpoint-down(md)
+         font-size: rem(22px)
+      +tr
+      &::after
+         content: ''
+         background-image: url('../img/icon/service-arrow.png')
+         background-repeat: no-repeat
+         background-size: contain
+         width: rem(55px)
+         height: 10px
+         position: relative
+         right: 0
+         top: 0
+         display: inline-block
+         margin-left: rem(20px)
+         vertical-align: middle
+         visibility: hidden
+         transform: translateX(30px)
+         opacity: 0
+         +tr
+         @include media-breakpoint-down(lg)
+            background: none
+   &__desc
+      color: #6F6F6F
+      font-size: rem(16px)
+
+.section-title
+   font-size: rem(46px)
+   line-height: rem(50px)
+   text-transform: uppercase
+   font-family: $font-bebas-regular
+   @include media-breakpoint-down(lg)
+      font-size: rem(30px)
+      line-height: rem(35px)
+   @include media-breakpoint-down(md)
+      font-size: rem(22px)
+      line-height: rem(30px)
+
+.form-online
+   overflow: hidden
+   padding: rem(65px) 0
+   @include media-breakpoint-down(lg)
+      padding: 0
+   .blue
+      @include media-breakpoint-down(lg)
+         color: $red
+   &__wr
+      padding: rem(100px) 0
+      background-color: $blue-light
+      position: relative
+      @include media-breakpoint-down(lg)
+         padding: 0 0 rem(50px)
+   &__wr-2
+      @include media-breakpoint-down(lg)
+         text-align: center
+         padding: 0 rem(18px)
+   &__img
+      position: absolute
+      top: rem(-65px)
+      left: rem(-100px)
+      width: auto
+      height: rem(520px)
+      @media screen and ( max-width: 1770px )
+         left: rem(-150px)
+      @media screen and ( max-width: 1670px )
+         left: rem(-250px)
+      @media screen and ( max-width: 1470px )
+         left: rem(-350px)
+      @media screen and ( max-width: 1250px )
+         left: rem(-450px)
+      @include media-breakpoint-down(lg)
+         position: relative
+         top: 0
+         left: 0
+         height: rem(350px)
+         margin-bottom: rem(20px)
+         img
+            object-position: top
+      @include media-breakpoint-down(md)
+         height: rem(250px)
+      @include media-breakpoint-down(sm)
+         height: rem(150px)
+      img
+         +img-resp
+         object-fit: cover
+   &__form
+      padding: 0 rem(20px)
+   .section-title
+      margin-bottom: rem(35px)
+      width: rem(600px)
+      @include media-breakpoint-down(lg)
+         width: auto
+         margin-bottom: rem(20px)
+      @include media-breakpoint-down(md)
+         margin-bottom: rem(10px)
+   .btn
+      padding: rem(14px) rem(0px)
+      width: 100%
+   .input
+      border: none
+      margin-right: rem(10px)
+      width: 95%
+      @include media-breakpoint-down(lg)
+         width: 100%
+         margin-bottom: rem(10px)
+      &:hover
+         box-shadow: 0px 4px 18px rgba(138, 152, 189, 0.25)
+         +tr
+      &:focus
+         box-shadow: 0px 4px 32px rgba(201, 209, 226, 0.56)
+
+.configurator
+   padding-bottom: rem(130px)
+   @include media-breakpoint-down(lg)
+      padding-bottom: rem(100px)
+   @include media-breakpoint-down(md)
+      padding-bottom: rem(50px)
+   @include media-breakpoint-down(sm)
+      padding-bottom: rem(20px)
+   &__title
+      font-family: $font-bebas-regular
+      font-size: rem(30px)
+      line-height: rem(35px)
+      margin-bottom: rem(25px)
+      text-transform: uppercase
+      @include media-breakpoint-down(md)
+         font-size: rem(22px)
+         line-height: rem(25px)
+   &__item
+      position: relative
+      margin-bottom: rem(25px)
+      background-color: #fff
+      @include media-breakpoint-down(md)
+         margin-bottom: rem(15px)
+   &__item-title
+      font-family: $font-regular
+      color: #000
+      font-size: rem(22px)
+      margin-bottom: rem(10px)
+      @include media-breakpoint-down(md)
+         font-size: rem(14px)
+   &__body
+      padding: rem(30px)
+      @include media-breakpoint-down(md)
+         padding: rem(15px)
+   &__img
+      text-align: center
+      margin-bottom: rem(30px)
+      width: 100%
+      overflow: hidden
+      img
+         display: inline-block
+         width: auto
+         height: 100%
+         object-fit: contain
+   &__option
+      margin-bottom: rem(10px)
+      li
+         font-family: $font-regular
+         color: #8E9EAE
+         font-size: rem(16px)
+         margin-bottom: rem(5px)
+         @include media-breakpoint-down(md)
+            font-size: rem(13px)
+   &__price
+      margin-bottom: rem(20px)
+      font-weight: bold
+      color: $blue
+      font-family: $font-bold
+      font-size: rem(22px)
+      @include media-breakpoint-down(md)
+         font-size: rem(16px)
+         margin-bottom: 0
+      span
+         margin-right: rem(20px)
+   &__btn
+      text-transform: uppercase
+      width: 100%
+      display: block
+      font-family: $font-bebas-bold
+      background-color: $blue
+      color: #fff
+      font-size: rem(22px)
+      text-align: center
+      padding: rem(25px) 0
+      @include media-breakpoint-down(md)
+         padding: rem(15px) 0
+         font-size: rem(14px)
+         letter-spacing: 13%
+      +tr
+      &:hover
+         color: #fff
+         background-color: #0D90E8
+         +tr
+      &:active
+         background-color: #005E9C
+   &__load-more
+      @include media-breakpoint-down(md)
+         width: 100%
+      .btn-border
+         width: rem(220px)
+         padding: rem(15px) 0
+         @include media-breakpoint-down(md)
+            width: 100%
+
+.accessories
+   padding-bottom: rem(120px)
+   &__title
+      font-size: rem(52px)
+      text-transform: uppercase
+      font-family: $font-bebas-regular
+      margin-bottom: rem(10px)
+   &__search
+      width: 100%
+      position: relative
+      margin-bottom: rem(10px)
+      &:hover
+         input
+            box-shadow: 0px 4px 18px rgba(138, 152, 189, 0.25)
+         svg
+            path, circle
+               stroke: $blue
+               +tr
+      input
+         width: 100%
+         padding: rem(8px) rem(20px)
+         border: none
+         height: rem(40px)
+         &::placeholder
+            color: #A5A5A5
+         &:focus
+            box-shadow: 0px 4px 18px rgba(138, 152, 189, 0.25)
+      button
+         background-color: inherit
+         border: none
+         position: absolute
+         right: rem(10px)
+         top: 50%
+         transform: translateY(-55%)
+         svg
+            path, circle
+               +tr
+   &__request
+      font-family: $font-light
+      color: #37393D
+      font-size: rem(14px)
+      display: inline-block
+      margin-top: rem(10px)
+      margin-left: rem(20px)
+   &__sorting
+      display: inline-block
+      float: right
+      margin-top: rem(5px)
+   &__sorting-item
+      cursor: pointer
+      font-size: rem(14px)
+      font-family: $font-light
+      color: #6F7175
+      display: inline-block
+      margin-right: rem(35px)
+      svg, span
+         vertical-align: middle
+      span
+         margin-right: rem(10px)
+         +tr
+      svg
+         width: rem(10px)
+         height: rem(14px)
+      &:hover
+         span
+            color: $blue
+            +tr
+   &__sorting-item-active
+      color: $blue
+      svg
+         transform: rotate(180deg)
+         path
+            fill: $blue
+   &__sorting-item:nth-last-child(1)
+      margin-right: 0
+
+.catalog
+   background-color: #fff
+   &__title
+      font-size: rem(30px)
+      line-height: rem(35px)
+      padding: rem(30px) rem(30px) rem(20px) rem(30px)
+      font-family: $font-bebas-regular
+      text-transform: uppercase
+   &__item-active
+      .catalog__item-text
+         color: $blue
+         font-family: $font-medium
+         +tr
+      svg
+         transform: translateY(-50%) rotate(180deg) !important
+         +tr
+         path
+            stroke: $blue
+   &__item
+      svg
+         position: absolute
+         top: 50%
+         right: rem(30px)
+         transform: translateY(-50%) rotate(0deg)
+         +tr
+   &__item-text, &__item-option
+      padding: rem(15px) rem(80px) rem(15px) rem(30px)
+      position: relative
+   &__all-item, &__item
+      border-top: 1px solid #EDF3FA
+      position: relative
+      font-family: $font-light
+      font-size: rem(14px)
+      line-height: rem(17px)
+      cursor: pointer
+      +tr
+      &:hover
+         .catalog__item-text
+            color: $blue
+            +tr
+   &__filter-reset
+      user-select: none
+      padding: rem(15px) rem(80px) rem(15px) rem(30px)
+      font-family: $font-light
+      font-size: rem(12px)
+      line-height: rem(15px)
+      cursor: pointer
+      color: #979797
+      &:hover
+         span
+            color: $red
+            +tr
+         svg
+            path
+               stroke: $red
+      &:active
+         span
+            color: $blue
+            +tr
+         svg
+            path
+               stroke: $blue
+      svg, span
+         vertical-align: middle
+      svg
+         margin-right: rem(5px)
+   &__btn
+      .configurator__btn
+         font-size: rem(18px)
+         font-family: $font-bebas-regular
+         padding: rem(18px) 0
+   &__item-option-item
+      margin-bottom: rem(12px)
+
+.checkbox
+   cursor: pointer
+   user-select: none
+   input
+      display: none
+   &__box
+      position: relative
+      font-size: rem(14px)
+      left: rem(30px)
+      &::before
+         content: ''
+         cursor: pointer
+         width: rem(18px)
+         height: rem(18px)
+         border: 1px solid #c0c2cd
+         position: absolute
+         top: 50%
+         left: rem(-30px)
+         transform: translateY(-50%)
+         display: inline-block
+   input[type=checkbox]:checked + .checkbox__box::before
+      background-image: url(../img/icon/check.svg)
+      background-position: center center
+      background-size: 13px
+      background-repeat: no-repeat
+      background-color: $blue
+      border-color: $blue
+   input[type=checkbox]:checked + .checkbox__box
+      color: $blue

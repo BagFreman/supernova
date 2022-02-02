@@ -1,0 +1,99 @@
+// Import bootstrap
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
+@import 'node_modules/bootstrap/scss/_modal'
+
+// Fonts
+$font-bebas-cyr: BebasNeueCyrillic, sans-serif
+
+$font-bold: Ubuntu-Bold, sans-serif
+$font-italic: Ubuntu-Italic, sans-serif
+$font-light: Ubuntu-Light, sans-serif
+$font-medium: Ubuntu-Medium, sans-serif
+$font-regular: Ubuntu-Regular, sans-serif
+
+$font-bebas-bold: bebasneuebold, sans-serif
+$font-bebas-book: bebasneuebook, sans-serif
+$font-bebas-light: bebasneuelight, sans-serif
+$font-bebas-regular: bebasneueregular, sans-serif
+$font-bebas-thin: bebasneuethin, sans-serif
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: local($fname), url($furl) format('woff2')
+
+@include font('BebasNeueCyrillic', normal, 400, '../fonts/BebasNeueCyrillic.woff2')
+
+@include font('Ubuntu-Bold', normal, 400, '../fonts/Ubuntu-Bold.woff2')
+@include font('Ubuntu-Italic', normal, 400, '../fonts/Ubuntu-Italic.woff2')
+@include font('Ubuntu-Light', normal, 400, '../fonts/Ubuntu-Light.woff2')
+@include font('Ubuntu-Medium', normal, 400, '../fonts/Ubuntu-Medium.woff2')
+@include font('Ubuntu-Regular', normal, 400, '../fonts/Ubuntu-Regular.woff2')
+
+@include font('bebasneuebold', normal, 400, '../fonts/bebasneuebold.woff2')
+@include font('bebasneuebook', normal, 400, '../fonts/bebasneuebook.woff2')
+@include font('bebasneuelight', normal, 400, '../fonts/bebasneuelight.woff2')
+@include font('bebasneueregular', normal, 400, '../fonts/bebasneueregular.woff2')
+@include font('bebasneuethin', normal, 400, '../fonts/bebasneuethin.woff2')
+
+// Color
+$green: #00C652
+$red: #F21530
+$blue: #0071BC
+$blue-light: #ECEFF5
+$gray-light: #9AA8B2
+$root-font-size: 16px
+
+@function rem($size)
+	@return calc($size / $root-font-size * 1rem)
+
+// CSS
+html
+	font-size: $root-font-size
+
+body
+	background-color: #fff
+	overflow-x: hidden
+	font-size: $root-font-size
+	min-width: rem(320px)
+	color: #2F2A2E
+	font-family: $font-regular
+
+p, ul, li, table, label, h1, h2, h3, h4, h5
+	margin: 0
+	padding: 0
+	font-size: rem(16px)
+
+ul li
+	list-style-type: none
+
+h1, h2, h3, h4, h5
+	font-weight: normal
+
+input, textarea, a
+	&:focus, &:active
+		outline: none
+
+a
+	color: inherit
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		color: inherit
+
+@mixin img-resp()
+	width: 100%
+	height: 100%
+
+@mixin tr()
+	transition: all .3s ease-in-out
+
+.container
+	max-width: rem(1445px)
+
+.container-head
+	max-width: rem(1580px)
