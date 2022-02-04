@@ -81,7 +81,7 @@ $(function () {
     });
 
 
-    // prosuct cart
+    // product cart
 
     let productPriceMask = $('.accessories-product__price span').text();
     $('.accessories-product__price span').text(numberMask(productPriceMask));
@@ -99,9 +99,6 @@ $(function () {
         let d = $(this).closest('.accessories-product').find('.accessories-product__price span').text().replace(/\s+/g, '');
 
 
-
-        console.log(d);
-
         $('.modal').find('.input-product-name').val(a);
         $('.modal').find('.modal-product__title').text(a);
         $('.modal').find('.modal-product__img img').attr('src', b);
@@ -112,6 +109,40 @@ $(function () {
         $('.modal').find('.modal-product__price span').text(numberMask(c * d));
         $('.modal').find('.input-product-price').val(numberMask(c * d));
 
+    });
+
+    // modal-service
+
+    $('.btn-service').on('click', function () {
+        let a = $(this).closest('.services-page-service__item').find('.services-page-service__text').text();
+        $('.modal-service').find('.input-service-name').val(a);
+    });
+
+    // slide service
+
+    $('.service-carousel').owlCarousel({
+        loop: true,
+        margin: 70,
+        nav: true,
+        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        dotsEach: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            }
+        }
+    })
+
+    let dotNumber = 1;
+
+    $('.service-carousel .owl-dot').each(function () {
+        $(this).find('span').html('0' + dotNumber); dotNumber++;
     });
 
     //maps
