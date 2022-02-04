@@ -25,9 +25,9 @@
             <ul>
                <li><a href="main.php">Главная</a></li>
                <li><a href="configurator.php">Конфигуратор</a></li>
-               <li><a href="">Тюнинг и сервис</a></li>
+               <li><a href="service.php">Тюнинг и сервис</a></li>
                <li><a href="accessories.php">Аксессуары</a></li>
-               <li><a href="">О заводе</a></li>
+               <li><a href="about.php">О заводе</a></li>
                <li><a href="contact.php">Контакты</a></li>
             </ul>
          </div>

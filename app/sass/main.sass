@@ -1,7 +1,7 @@
 @import config.sass
 
 .no-gutters
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       padding: 0
 
 .blue
@@ -13,8 +13,15 @@
 
 .header-top
    padding: rem(20px) 0 rem(17px) 0
-   @include media-breakpoint-down(lg)
+   position: sticky
+   top: -1px
+   z-index: 99
+   background-color: #fff
+   box-shadow: 1px 1px 2px 1px #e7e7e7
+   @include media-breakpoint-down(md)
       padding: rem(10px) 0
+      position: relative
+      box-shadow: none
    &__btn-all
       display: inline-block
    &__phone
@@ -84,7 +91,7 @@
       margin-right: rem(20px)
    @media screen and ( max-width: 1280px )
       width: rem(135px)
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       float: right
       margin-right: 0
    &__img
@@ -246,13 +253,13 @@
          padding: rem(45px)
          border-radius: 0
          border: none
-         @include media-breakpoint-down(md)
+         @include media-breakpoint-down(sm)
             padding: rem(15px)
          .input
             display: block
             margin-bottom: rem(20px)
             width: 100%
-            @include media-breakpoint-down(md)
+            @include media-breakpoint-down(sm)
                margin-bottom: rem(10px)
          .btn
             margin-top: rem(10px)
@@ -262,7 +269,7 @@
       position: absolute
       right: rem(20px)
       top: rem(20px)
-      @include media-breakpoint-down(md)
+      @include media-breakpoint-down(sm)
          top: rem(10px)
          right: rem(10px)
       svg
@@ -277,7 +284,7 @@
       text-transform: uppercase
       font-size: rem(30px)
       margin-bottom: rem(35px)
-      @include media-breakpoint-down(md)
+      @include media-breakpoint-down(sm)
          text-align: center
          margin-top: rem(40px)
    &__thanks
@@ -359,7 +366,7 @@
 
 .contact
    margin-bottom: rem(180px)
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       margin-bottom: 0
    &__title
       font-size: rem(52px)
@@ -422,7 +429,7 @@
       width: 100%
       @media screen and ( max-width: 1200px )
          height: rem(420px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          height: rem(335px)
       @include media-breakpoint-down(md)
          height: rem(300px)
@@ -486,7 +493,7 @@
 .footer
    background-color: #333333
    padding: rem(50px) 0 rem(70px)
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       padding: rem(30px) 0 rem(50px)
    @include media-breakpoint-down(md)
       padding: rem(20px) 0 rem(20px)
@@ -502,7 +509,7 @@
          height: auto
    &__social
       margin-bottom: rem(20px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          margin-bottom: rem(10px)
       a
          background-color: #333333
@@ -520,7 +527,7 @@
       font-size: rem(14px)
       color: #D0D0D0
       display: block
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          margin-bottom: rem(20px)
       &:hover
          color: #D0D0D0
@@ -528,14 +535,14 @@
       display: flex
       justify-content: space-between
       margin-left: rem(80px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          display: block
          margin-left: 0
    &__menu
       display: inline-block
       vertical-align: top
       margin-right: rem(10px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          display: block
          margin-right: 0
          margin-bottom: rem(20px)
@@ -545,7 +552,7 @@
       color: #fff
       text-transform: uppercase
       margin-bottom: rem(20px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          margin-bottom: rem(10px)
    &__menu-item
       margin-bottom: rem(10px)
@@ -588,7 +595,7 @@
             color: #fff
    &__wr
       text-align: right
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          text-align: left
 
 .footer-bottom
@@ -596,16 +603,16 @@
    background-color: #252525
    &__left
       text-align: left
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
    &__text
       color: #848484
       font-size: rem(14px)
       font-family: $font-light
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          margin-bottom: rem(10px)
    &__right
       text-align: right
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          text-align: left
    &__dev
       span
@@ -627,7 +634,7 @@
    padding: rem(60px) 0
    position: relative
    background-color: #333333
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       overflow: hidden
       padding: 0
       padding-top: rem(60px)
@@ -638,7 +645,7 @@
    @include media-breakpoint-down(md)
       margin-bottom: rem(50px)
    &__wr, &__wr-2, &__wr-3
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          text-align: center
    &__wr-2
       @include media-breakpoint-down(sm)
@@ -647,7 +654,7 @@
       position: relative
       z-index: 2
       width: rem(313px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          margin-bottom: rem(20px)
          display: inline-block
       @include media-breakpoint-down(sm)
@@ -680,7 +687,7 @@
       text-transform: uppercase
       font-family: $font-bebas-bold
       margin-bottom: rem(15px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          font-family: $font-bebas-regular
          width: rem(300px)
          display: inline-block
@@ -694,7 +701,7 @@
       height: 100%
    &__img
       position: absolute
-      bottom: 0
+      bottom: rem(-60px)
       right: 0
       z-index: 2
       width: rem(930px)
@@ -704,9 +711,10 @@
          width: rem(750px)
       @media screen and ( max-width: 1150px )
          width: rem(650px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          position: relative
          display: inline-block
+         bottom: 0
       @include media-breakpoint-down(md)
          width: 100%
       img
@@ -718,7 +726,7 @@
       transform: translate(-50%, -50%)
       z-index: 1
       width: 100%
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          top: 13%
       img
          +img-resp
@@ -728,7 +736,7 @@
 .services
    padding-top: rem(130px)
    padding-bottom: rem(130px)
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       padding-top: rem(100px)
       padding-bottom: rem(100px)
    @include media-breakpoint-down(md)
@@ -811,7 +819,7 @@
          transform: translateX(30px)
          opacity: 0
          +tr
-         @include media-breakpoint-down(lg)
+         @include media-breakpoint-down(md)
             background: none
    &__desc
       color: #6F6F6F
@@ -822,7 +830,7 @@
    line-height: rem(50px)
    text-transform: uppercase
    font-family: $font-bebas-regular
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       font-size: rem(30px)
       line-height: rem(35px)
    @include media-breakpoint-down(md)
@@ -832,19 +840,19 @@
 .form-online
    overflow: hidden
    padding: rem(65px) 0
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       padding: 0
    .blue
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          color: $red
    &__wr
       padding: rem(100px) 0
       background-color: $blue-light
       position: relative
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          padding: 0 0 rem(50px)
    &__wr-2
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          text-align: center
          padding: 0 rem(18px)
    &__img
@@ -861,7 +869,7 @@
          left: rem(-350px)
       @media screen and ( max-width: 1250px )
          left: rem(-450px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          position: relative
          top: 0
          left: 0
@@ -876,12 +884,10 @@
       img
          +img-resp
          object-fit: cover
-   &__form
-      padding: 0 rem(20px)
    .section-title
       margin-bottom: rem(35px)
       width: rem(600px)
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          width: auto
          margin-bottom: rem(20px)
       @include media-breakpoint-down(md)
@@ -893,7 +899,7 @@
       border: none
       margin-right: rem(10px)
       width: 95%
-      @include media-breakpoint-down(lg)
+      @include media-breakpoint-down(md)
          width: 100%
          margin-bottom: rem(10px)
       &:hover
@@ -904,7 +910,7 @@
 
 .configurator
    padding-bottom: rem(130px)
-   @include media-breakpoint-down(lg)
+   @include media-breakpoint-down(md)
       padding-bottom: rem(100px)
    @include media-breakpoint-down(md)
       padding-bottom: rem(50px)
@@ -976,6 +982,7 @@
       font-size: rem(22px)
       text-align: center
       padding: rem(25px) 0
+      border: none
       @include media-breakpoint-down(md)
          padding: rem(15px) 0
          font-size: rem(14px)
@@ -998,6 +1005,10 @@
 
 .accessories
    padding-bottom: rem(120px)
+   @include media-breakpoint-down(md)
+      padding-bottom: rem(80px)
+   @include media-breakpoint-down(sm)
+      padding-bottom: rem(40px)
    &__title
       font-size: rem(52px)
       text-transform: uppercase
@@ -1040,10 +1051,18 @@
       display: inline-block
       margin-top: rem(10px)
       margin-left: rem(20px)
+      @include media-breakpoint-down(md)
+         margin-top: 0
+         margin-left: 0
+         margin-bottom: rem(30px)
    &__sorting
       display: inline-block
       float: right
       margin-top: rem(5px)
+      @include media-breakpoint-down(md)
+         display: block
+         float: inherit
+         margin-bottom: rem(10px)
    &__sorting-item
       cursor: pointer
       font-size: rem(14px)
@@ -1071,9 +1090,17 @@
             fill: $blue
    &__sorting-item:nth-last-child(1)
       margin-right: 0
+   &__wr
+      margin-bottom: rem(18px)
+   &__select
+      border: none
+      padding: rem(10px) rem(15px)
+      color: $blue
+      width: 100%
 
 .catalog
    background-color: #fff
+   margin-bottom: rem(20px)
    &__title
       font-size: rem(30px)
       line-height: rem(35px)
@@ -1090,6 +1117,8 @@
          +tr
          path
             stroke: $blue
+      .catalog__item-option
+         display: block
    &__item
       svg
          position: absolute
@@ -1143,6 +1172,11 @@
          font-size: rem(18px)
          font-family: $font-bebas-regular
          padding: rem(18px) 0
+         @include media-breakpoint-down(sm)
+            font-size: rem(14px)
+            padding: rem(14px) 0
+   &__item-option
+      display: none
    &__item-option-item
       margin-bottom: rem(12px)
 
@@ -1175,3 +1209,214 @@
       border-color: $blue
    input[type=checkbox]:checked + .checkbox__box
       color: $blue
+
+.accessories-product
+   margin-bottom: rem(25px)
+   background-color: #fff
+   @include media-breakpoint-down(sm)
+      margin-bottom: rem(10px)
+   &__body
+      padding: rem(25px)
+   &__stock
+      color: #98DA65
+      font-size: rem(14px)
+   &__img
+      width: auto
+      height: rem(180px)
+      margin-bottom: rem(20px)
+      img
+         +img-resp
+         object-fit: contain
+   &__title
+      font-family: $font-medium
+      font-size: rem(16px)
+      line-height: rem(20px)
+      color: #1D1D1D
+      margin-bottom: rem(20px)
+      height: 85px
+      position: relative
+      overflow: hidden
+   &__desc-text
+      display: none
+      font-family: $font-light
+      font-size: rem(14px)
+      line-height: rem(17px)
+      margin-bottom: rem(30px)
+      color: #707C8D
+   &__desc-text-active
+      display: block !important
+   &__desc-check
+      cursor: pointer
+      color: #707C8D
+      font-size: rem(12px)
+      list-style: rem(14px)
+      text-decoration: underline
+      margin-bottom: rem(50px)
+      display: block
+   &__price
+      color: #1D1D1D
+      font-size: rem(18px)
+      font-family: $font-medium
+      float: right
+      margin-top: 2px
+      @media screen and ( max-width: 1250px )
+         display: block
+         float: inherit
+         margin-top: 10px
+      @include media-breakpoint-down(md)
+         display: inline-block
+         float: right
+         margin-top: 0
+   &__btn
+      .configurator__btn
+         background-color: #0071BC
+         font-size: rem(18px)
+         padding: rem(18px) 0
+         @include media-breakpoint-down(sm)
+            font-size: rem(14px)
+            padding: rem(14px) 0
+         +tr
+         &:hover
+            background-color: #0D90E8
+            +tr
+         &:active
+            background-color: #005E9C
+
+.input-block
+   width: rem(120px)
+   &__wr
+      position: relative
+      border: 1px solid #DDDFE5
+      border-radius: 5px
+   &__plus, &__minus
+      user-select: none
+      background-color: #DDDFE5
+      top: 50%
+      position: absolute
+      cursor: pointer
+      transform: translateY(-50%)
+      font-weight: normal
+      width: rem(33px)
+      height: rem(30px)
+      svg
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)
+   &__plus
+      right: -0.1rem
+      background-color: $blue
+      +tr
+      &:hover
+         background-color: #0D90E8
+         +tr
+      &:active
+         background-color: $blue
+   &__minus
+      left: -0.1rem
+   &__input
+      user-select: none
+      background-color: #fff
+      width: 100%
+      text-align: center
+      border: none
+      color: #000
+      height: rem(28px)
+
+.modal-product
+   &__img
+      width: 100%
+      height: rem(100px)
+      @include media-breakpoint-down(sm)
+         margin-bottom: rem(10px)
+      img
+         +img-resp
+         object-fit: contain
+   &__wr
+      margin-left: rem(40px)
+      margin-bottom: rem(50px)
+      @include media-breakpoint-down(sm)
+         margin-left: 0
+         margin-bottom: rem(20px)
+   &__title
+      font-size: rem(16px)
+      line-height: rem(19px)
+      font-family: $font-medium
+      margin-bottom: rem(15px)
+   &__count
+      display: inline-block
+      margin-right: rem(10px)
+      font-size: rem(14px)
+      color: #A2A9B2
+      font-family: $font-regular
+   &__price
+      display: inline-block
+      color: #1D1D1D
+      font-size: rem(18px)
+      font-family: $font-medium
+
+.pagination
+   margin-top: rem(50px)
+   @include media-breakpoint-down(sm)
+      text-align: center
+      margin-top: rem(10px)
+   &__wr
+      padding: 0 rem(45px)
+      display: inline-block
+      @include media-breakpoint-down(sm)
+         padding: 0 rem(20px)
+   &__item
+      display: inline-block
+      margin-right: rem(40px)
+      @include media-breakpoint-down(sm)
+         margin-right: rem(15px)
+   &__item:nth-last-child(1)
+      margin-right: 0
+   &__link
+      color: #CCD2E0
+      font-family: $font-bebas-cyr
+      font-size: rem(18px)
+      line-height: rem(18px)
+      letter-spacing: 14%
+      padding-bottom: rem(15px)
+      border-bottom: 4px solid inherit
+      @include media-breakpoint-down(sm)
+         font-size: rem(14px)
+         line-height: rem(14px)
+         padding-bottom: rem(10px)
+      +tr
+      &:hover
+         color: #000
+         +tr
+   &__item-active
+      a
+         color: #000
+         border-bottom: 4px solid $blue
+   &__prev, &__next
+      position: relative
+      background-color: inherit
+      border: none
+      box-sizing: border-box
+      border: 1px solid #DFE1E7
+      width: rem(83px)
+      height: rem(46px)
+      @include media-breakpoint-down(sm)
+         width: rem(53px)
+         height: rem(36px)
+      +tr
+      &:hover
+         background-color: $blue
+         +tr
+         svg path
+            fill: #fff
+            +tr
+      &:active
+         background-color: #005E9C
+      svg
+         position: absolute
+         top: 50%
+         left: 50%
+         transform: translate(-50%, -50%)
+   &__next
+      svg
+         transform: translate(-50%,-50%) rotate(180deg)

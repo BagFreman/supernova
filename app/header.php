@@ -10,7 +10,7 @@
    <meta name="keywords" content="">
 
    <title>Title</title>
-   <link rel="icon" href="">
+   <link rel="icon" href="img/favicon.svg">
    <link rel="stylesheet" href="css/app.min.css?var=1.0">
    <script src="js/app.min.js?var=1.0"></script>
 
