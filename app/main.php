@@ -1,5 +1,66 @@
 <?php include 'header.php' ?>
 
+
+
+<header class="header">
+
+   <div class="owl-carousel owl-theme header-slide">
+
+      <div class="header-slide-item header-slide-item-1">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="header-slide-item__wr">
+                     <h2 class="header-slide-item__h2">Современные катера </h2>
+                     <h3 class="header-slide-item__h3">для активного отдыха</h3>
+                     <div class="header-slide-item__btn">
+                        <div class="header-slide-item__line"></div>
+                        <a class="btn" href="">Выбрать модель</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="header-slide-item header-slide-item-1">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="header-slide-item__wr">
+                     <h2 class="header-slide-item__h2">Современные катера</h2>
+                     <h3 class="header-slide-item__h3">для активного отдыха</h3>
+                     <div class="header-slide-item__btn">
+                        <div class="header-slide-item__line"></div>
+                        <a class="btn" href="">Выбрать модель</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="header-slide-item header-slide-item-1">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-12">
+                  <div class="header-slide-item__wr">
+                     <h2 class="header-slide-item__h2">Современные катера </h2>
+                     <h3 class="header-slide-item__h3">для активного отдыха</h3>
+                     <div class="header-slide-item__btn">
+                        <div class="header-slide-item__line"></div>
+                        <a class="btn" href="">Выбрать модель</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </div>
+
+</header>
+
 <section class="form-online">
    <div class="form-online__wr">
       <div class="form-online__img ">

@@ -145,6 +145,26 @@ $(function () {
         $(this).find('span').html('0' + dotNumber); dotNumber++;
     });
 
+    // slide header
+
+    $('.header-slide').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        navText: ['<img src="img/icon/header-left.svg" alt="">', '<img src="img/icon/header-right.svg" alt="">'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
     //maps
 
     ymaps.ready(function () {
