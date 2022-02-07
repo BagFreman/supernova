@@ -98,7 +98,6 @@ $(function () {
         let c = $(this).closest('.accessories-product').find('.input-quantity').val();
         let d = $(this).closest('.accessories-product').find('.accessories-product__price span').text().replace(/\s+/g, '');
 
-
         $('.modal').find('.input-product-name').val(a);
         $('.modal').find('.modal-product__title').text(a);
         $('.modal').find('.modal-product__img img').attr('src', b);
@@ -165,6 +164,65 @@ $(function () {
         }
     })
 
+    // slide boat
+
+    $('.boat-slide, .test-drive-slide').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        smartSpeed: 400,
+        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+    let boatModalNumber = 0;
+    let boatModal = [
+        'A34',
+        'F35',
+        'S36',
+        'G37',
+        'V67'
+    ]
+
+    $('.boat-slide .owl-dot, .test-drive-slide .owl-dot').each(function () {
+        $(this).find('span').html(boatModal[boatModalNumber]); boatModalNumber++;
+    });
+
+    //slide design
+
+    $('.design-slide').owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: true,
+        smartSpeed: 400,
+        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    })
+
+    $('.design-slide .owl-dot').each(function () {
+        $(this).find('span').html('0' + dotNumber); dotNumber++;
+    });
+
     //maps
 
     ymaps.ready(function () {
@@ -204,6 +262,25 @@ $(function () {
         myMap.geoObjects
             .add(myPlacemark)
             .add(myPlacemarkWithContent);
+    });
+
+    $(".contac-form").submit(function () { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            $('.modal__open').css('display', 'none');
+            $('.modal__thanks').css('display', 'block');
+            $('#test-drive').modal('show');
+            setTimeout(function () {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+            $
+        });
+        return false;
     });
 
 });
