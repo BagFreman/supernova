@@ -283,4 +283,35 @@ $(function () {
         return false;
     });
 
+    // slide certificates
+
+    $('.service-certificates').owlCarousel({
+        loop: true,
+        margin: 25,
+        nav: true,
+        smartSpeed: 400,
+        dotsEach: true,
+        stagePadding: 100,
+        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 0,
+            },
+            600: {
+                items: 1,
+                stagePadding: 0,
+            },
+            1000: {
+                items: 3
+            }
+        }
+    })
+
+    let dotNumbers = 1;
+
+    $('.service-certificates .owl-dot').each(function () {
+        $(this).find('span').html('0' + dotNumbers); dotNumbers++;
+    });
+
 });

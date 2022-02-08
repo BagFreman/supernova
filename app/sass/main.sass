@@ -1075,6 +1075,8 @@
       color: #000
       font-size: rem(22px)
       margin-bottom: rem(10px)
+      height: rem(30px)
+      overflow: hidden
       @include media-breakpoint-down(md)
          font-size: rem(14px)
    &__body
@@ -1579,7 +1581,7 @@
 .services-page-offer
    margin-bottom: rem(110px)
    @include media-breakpoint-down(sm)
-      margin-bottom: rem(145px)
+      margin-bottom: rem(100px)
    &__contaner
       position: relative
       width: 100%
@@ -1614,8 +1616,8 @@
          transform: translateX(-50%)
       @include media-breakpoint-down(sm)
          position: relative
-         font-size: rem(16px)
-         line-height: rem(24px)
+         font-size: rem(12px)
+         line-height: rem(16px)
          bottom: inherit
          top: rem(-25px)
          left: 0
@@ -1851,6 +1853,9 @@
             padding: 0 rem(4px)
             padding-bottom: rem(18px)
             border-bottom: 4px solid inherit
+            @include media-breakpoint-down(md)
+               padding: 0 rem(20px)
+               padding-bottom: rem(18px)
       .owl-dot:nth-last-child(1)
          margin-right: 0
       .active
@@ -1859,8 +1864,6 @@
             display: inline-block
          span
             border-bottom: 4px solid $blue
-            @include media-breakpoint-down(md)
-               border-bottom: none
 
 .section-boat
    position: relative
@@ -1931,6 +1934,8 @@
       line-height: rem(26px)
       @include media-breakpoint-down(sm)
          margin-bottom: rem(20px)
+         font-size: rem(12px)
+         line-height: rem(16px)
       @include media-breakpoint-down(xs)
          width: auto
    &__link
@@ -2064,6 +2069,9 @@
             padding: 0 rem(4px)
             padding-bottom: rem(18px)
             border-bottom: 4px solid inherit
+            @include media-breakpoint-down(md)
+               padding: 0 rem(20px)
+               padding-bottom: rem(18px)
       .owl-dot:nth-last-child(1)
          margin-right: 0
       .active
@@ -2072,8 +2080,6 @@
             display: inline-block
          span
             border-bottom: 4px solid $blue
-            @include media-breakpoint-down(md)
-               border: none
 
 .section-production
    overflow: hidden
@@ -2124,6 +2130,9 @@
          font-size: rem(14px)
          line-height: rem(24px)
          margin-bottom: rem(20px)
+      @include media-breakpoint-down(sm)
+         font-size: rem(12px)
+         line-height: rem(15px)
    &__btn
       margin-left: rem(30px)
       @include media-breakpoint-down(sm)
@@ -2200,9 +2209,11 @@
          width: auto
       @include media-breakpoint-down(md)
          width: rem(400px)
-      @include media-breakpoint-down(xs)
+      @include media-breakpoint-down(sm)
          width: auto
          margin-bottom: rem(20px)
+         font-size: rem(12px)
+         line-height: rem(18px)
 
 .design-slide
    position: absolute
@@ -2335,7 +2346,15 @@
          transform: translate(-50%, -50%)
 
 .section-test-drive
+   position: relative
+   overflow: hidden
    padding-bottom: rem(150px)
+   @include media-breakpoint-down(md)
+      padding-bottom: rem(100px)
+   @include media-breakpoint-down(sm)
+      padding-bottom: rem(70px)
+   @include media-breakpoint-down(xs)
+      padding-bottom: rem(50px)
    &__title
       width: rem(880px)
       font-family: $font-bebas-regular
@@ -2343,34 +2362,68 @@
       line-height: rem(63px)
       text-transform: uppercase
       margin-bottom: rem(80px)
+      @include media-breakpoint-down(sm)
+         width: auto
+         font-size: rem(40px)
+         line-height: rem(48px)
+         margin-bottom: rem(70px)
+      @include media-breakpoint-down(xs)
+         font-size: rem(22px)
+         line-height: rem(28px)
+         margin-bottom: rem(60px)
+   &__btn
+      position: absolute
+      z-index: 2
+      top: rem(-45px)
+      @include media-breakpoint-down(sm)
+         top: rem(-35px)
+      @include media-breakpoint-down(xs)
+         top: rem(-25px)
+      .btn
+         text-align: right
+         width: rem(590px)
+         font-family: $font-bebas-regular
+         letter-spacing: 0
+         font-size: rem(30px)
+         padding: rem(40px) rem(40px) rem(40px) 0
+         height: auto
+         @media screen and ( max-width: 500px )
+            width: rem(500px)
+         @include media-breakpoint-down(sm)
+            width: rem(350px)
+            padding: rem(30px) rem(30px) rem(30px) 0
+            font-size: rem(25px)
+         @include media-breakpoint-down(xs)
+            font-size: rem(18px)
+            padding: rem(15px) rem(25px) rem(15px) 0
+            width: rem(250px)
+         &:hover
+            color: #fff
+         span
+            margin-right: 20px
+      svg
+         path
+            fill: #fff
 
 .test-drive-slide
    .owl-nav
       position: absolute
       bottom: 0
       right: 0
-      @include media-breakpoint-down(md)
-         bottom: inherit
-         width: 100%
       button
          width: rem(150px)
          height: rem(90px)
          position: relative
          @include media-breakpoint-down(md)
-            background-color: inherit !important
-            width: auto
-            img
-               width: rem(30px)
+            width: rem(100px)
+            height: rem(70px)
+         @include media-breakpoint-down(md)
+            width: rem(70px)
+            height: rem(40px)
       .owl-prev
          background-color: #F2F4F6 !important
-         @include media-breakpoint-down(md)
-            background-color: inherit !important
       .owl-next
          background-color: #F2F4F6 !important
-         @include media-breakpoint-down(md)
-            position: absolute
-            right: 0
-            background-color: inherit !important
    .owl-dots
       position: absolute
       top: rem(-80px)
@@ -2402,6 +2455,287 @@
             padding: 0 rem(4px)
             padding-bottom: rem(18px)
             border-bottom: 4px solid inherit
+      .active
+         color: #000
+         span
+            border-bottom: 4px solid $blue
+      .owl-dot:nth-last-child(1)
+         margin-right: 0
+
+.section-foundation
+   position: relative
+   overflow: hidden
+   padding: rem(150px) 0
+   @include media-breakpoint-down(md)
+      padding: rem(100px) 0
+   @include media-breakpoint-down(sm)
+      padding: rem(70px) 0
+   @include media-breakpoint-down(xs)
+      padding: rem(50px) 0
+   &__content
+      position: relative
+      margin-bottom: rem(80px)
+   &__img
+      width: 100%
+      height: auto
+      padding-left: rem(60px)
+      position: relative
+      z-index: 2
+      img
+         +img-resp
+      span
+         font-size: rem(150px)
+         line-height: rem(90px)
+         text-transform: uppercase
+         font-family: $font-bebas-bold
+         color: #fff
+         position: absolute
+         bottom: 0
+         right: rem(45px)
+         @include media-breakpoint-down(sm)
+            font-size: rem(90px)
+            line-height: rem(50px)
+   &__bgc
+      width: 100%
+      height: rem(300px)
+      background-color: #F2F4F6
+      z-index: 1
+      position: absolute
+      right: rem(50px)
+      bottom: rem(-80px)
+      @include media-breakpoint-down(sm)
+         height: rem(200px)
+         bottom: rem(-45px)
+      @include media-breakpoint-down(xs)
+         height: rem(150px)
+         right: rem(20px)
+      span
+         font-family: $font-light-italic
+         font-size: rem(20px)
+         color: $blue
+         position: absolute
+         bottom: rem(35px)
+         right: rem(90px)
+         @include media-breakpoint-down(sm)
+            font-size: rem(15px)
+            bottom: rem(15px)
+            right: rem(30px)
+         &::before
+            content: ''
+            width: rem(72px)
+            height: rem(3px)
+            background-color: #CED4DE
+            position: absolute
+            left: rem(-110px)
+            top: 50%
+            transform: translateY(-50%)
+            display: block
+   &__wr
+      margin-left: rem(140px)
+      margin-top: rem(40px)
+      @include media-breakpoint-down(md)
+         margin-left: 0
+      @include media-breakpoint-down(sm)
+         margin-top: 0
+   .section-title
+      font-size: rem(52px)
+      line-height: rem(56px)
+      margin-bottom: rem(25px)
+      @include media-breakpoint-down(md)
+         font-size: rem(42px)
+         line-height: rem(46px)
+      @include media-breakpoint-down(sm)
+         font-size: rem(32px)
+         line-height: rem(36px)
+      @include media-breakpoint-down(xs)
+         font-size: rem(25px)
+         line-height: rem(28px)
+   .section-production__text
+      margin-bottom: rem(20px)
+
+.section-control
+   padding: rem(200px) 0
+   @include media-breakpoint-down(md)
+      padding: rem(150px) 0
+   @include media-breakpoint-down(sm)
+      padding: rem(100px) 0
+   @include media-breakpoint-down(xs)
+      padding: rem(90px) 0 rem(50px) 0
+   .section-title
+      width: rem(340px)
+      @media screen and ( max-width: 1100px )
+         width: rem(300px)
+   .section-production__text, .section-design__text
+      width: rem(440px)
+      @media screen and ( max-width: 1100px )
+         width: rem(400px)
+   &__img-text
+      position: absolute
+      top: rem(-55px)
+      left: 0px
+      z-index: 2
+   &__img-text-2
+      position: absolute
+      right: 0
+      top: rem(35px)
+   .section-foundation__content
+      margin-bottom: 0
+      @include media-breakpoint-down(md)
+         margin-bottom: rem(30px)
+   .section-foundation__wr
+      @media screen and ( max-width: 1250px )
+         margin-left: rem(30px)
+      @media screen and ( max-width: 1100px )
+         margin-left: 0
+   .section-foundation__img
+      @include media-breakpoint-down(xs)
+         padding-left: rem(20px)
+   .section-control__img-text
+      @include media-breakpoint-down(xs)
+         top: -25px
+         left: -10px
+         z-index: 2
+         width: 54px
+
+.section-certificates
+   position: relative
+   overflow: hidden
+   padding: rem(120px)
+   @include media-breakpoint-down(md)
+      padding: rem(100px) 0
+   @include media-breakpoint-down(sm)
+      padding: rem(70px) 0
+   @include media-breakpoint-down(xs)
+      padding: rem(50px) 0
+   &__wr
+      margin-top: rem(40px)
+      @include media-breakpoint-down(md)
+         margin-top: 0
+   .section-title
+      width: rem(500px)
+      @media screen and ( max-width: 1321px )
+         width: auto
+      @include media-breakpoint-down(md)
+         width: rem(500px)
+      @include media-breakpoint-down(sm)
+         width: auto
+   .section-production__text
+      width: rem(450px)
+      @media screen and ( max-width: 1321px )
+         width: auto
+      @include media-breakpoint-down(md)
+         width: rem(450px)
+      @include media-breakpoint-down(sm)
+         widows: auto
+
+.service-certificates
+   width: rem(1000px)
+   @include media-breakpoint-down(md)
+      width: auto
+      margin: 0 rem(40px)
+   &__block-white
+      width: rem(1100px)
+      height: rem(220px)
+      background-color: #fff
+      position: absolute
+      bottom: rem(90px)
+      @include media-breakpoint-down(md)
+         height: rem(170px)
+         bottom: rem(80px)
+         width: 96%
+   &__img
+      height: rem(350px)
+      img
+         +img-resp
+         object-fit: cover
+         @include media-breakpoint-down(md)
+            object-fit: contain
+   .owl-stage
+      padding-left: 0 !important
+   .owl-stage-outer
+      margin-left: rem(50px)
+      @include media-breakpoint-down(md)
+         margin-left: 0
+   .owl-nav
+      margin-top: rem(85px)
+      @include media-breakpoint-down(md)
+         margin-top: 0
+         margin-bottom: rem(20px)
+         position: relative
+         z-index: 10
+         margin-top: rem(20px)
+      button
+         width: rem(100px)
+         height: rem(60px)
+         position: relative
+         @include media-breakpoint-down(md)
+            background-color: inherit !important
+            width: auto
+            img
+               width: rem(30px)
+      .owl-prev
+         margin-right: rem(5px)
+         background-color: #fff !important
+         @include media-breakpoint-down(md)
+            background-color: inherit !important
+      .owl-next
+         background-color: #fff !important
+         @include media-breakpoint-down(md)
+            position: absolute
+            right: 0
+            background-color: inherit !important
+   .owl-dots
+      position: absolute
+      bottom: rem(20px)
+      left: -70%
+      @media screen and ( max-width: 1600px )
+         left: -68%
+      @media screen and ( max-width: 1542px )
+         left: -64%
+      @media screen and ( max-width: 1560px )
+         left: -64%
+      @media screen and ( max-width: 1450px )
+         left: -60%
+      @media screen and ( max-width: 1380px )
+         left: -54%
+      @media screen and ( max-width: 1270px )
+         left: -50%
+      @media screen and ( max-width: 1180px )
+         left: -46%
+      @media screen and ( max-width: 1150px )
+         left: -43%
+      @media screen and ( max-width: 1050px )
+         left: -38%
+      @include media-breakpoint-down(md)
+         display: block
+         left: 50%
+         transform: translateX(-50%)
+         width: 100%
+         text-align: center
+         z-index: 2
+      .owl-dot
+         font-family: $font-bebas-cyr
+         font-size: rem(18px)
+         line-height: rem(18px)
+         letter-spacing: 14%
+         color: #CCD2E0
+         margin-right: rem(80px)
+         +tr
+         @media screen and ( max-width: 1150px )
+            margin-right: rem(50px)
+         @include media-breakpoint-down(md)
+            margin-right: 0
+            display: none
+         &:hover
+            color: #000
+            +tr
+         span
+            padding: 0 rem(4px)
+            padding-bottom: rem(18px)
+            border-bottom: 4px solid inherit
+            @include media-breakpoint-down(md)
+               padding: 0 rem(20px)
+               padding-bottom: rem(18px)
       .owl-dot:nth-last-child(1)
          margin-right: 0
       .active
@@ -2410,5 +2744,3 @@
             display: inline-block
          span
             border-bottom: 4px solid $blue
-            @include media-breakpoint-down(md)
-               border-bottom: none
