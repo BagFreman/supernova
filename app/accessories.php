@@ -352,7 +352,7 @@
                                  </div>
                               </label>
                               <div class="accessories-product__price">
-                                 1 810 руб.
+                                 <span>1810</span> руб.
                               </div>
                            </div>
                         </div>
@@ -402,7 +402,7 @@
                                  </div>
                               </label>
                               <div class="accessories-product__price">
-                                 1 810 руб.
+                                 <span>1810</span> руб.
                               </div>
                            </div>
                         </div>
@@ -452,7 +452,7 @@
                                  </div>
                               </label>
                               <div class="accessories-product__price">
-                                 1 810 руб.
+                                 <span>1810</span> руб.
                               </div>
                            </div>
                         </div>

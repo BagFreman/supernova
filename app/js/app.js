@@ -1,11 +1,7 @@
 $(function () {
 
-    function numberMask(string) {
-        let str;
-        if (string) {
-            string !== null ? str = string.toString().replace(/(\d)(?=(\d{3})+(\D|$))/g, '$1 ') : '';
-        }
-        return str;
+    function triplets(str) {
+        return str.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1\u202f');
     }
 
     //phone mask
@@ -83,8 +79,14 @@ $(function () {
 
     // product cart
 
-    let productPriceMask = $('.accessories-product__price span').text();
-    $('.accessories-product__price span').text(numberMask(productPriceMask));
+    let i = 1;
+
+    $('.accessories-product__price').each(function () {
+        let productPriceMask = $(this).find('span').text();
+        $(this).find('span').text(triplets(productPriceMask));
+        i++;
+    });
+
 
     $('.accessories-product__desc-check').on('click', function () {
         let a = $(this).closest('.accessories-product__desc').find('.accessories-product__desc-text').hasClass('accessories-product__desc-text-active');
@@ -104,9 +106,8 @@ $(function () {
 
         $('.modal').find('.modal-product__count').text(c + ' штук');
         $('.modal').find('.input-product-count').val(c + ' штук');
-
-        $('.modal').find('.modal-product__price span').text(numberMask(c * d));
-        $('.modal').find('.input-product-price').val(numberMask(c * d));
+        $('.modal').find('.modal-product__price span').text(triplets(c * d));
+        $('.modal').find('.input-product-price').val(c * d);
 
     });
 
@@ -328,17 +329,13 @@ $(function () {
         $('.configurator-option__title-block').html(b);
 
         $('.configurator-top-block').each(function () {
-
             let dataBlock = $(this).attr('data-block');
-
             i++;
-
             if (a == dataBlock) {
                 $(this).css('display', 'block')
             } else {
                 $(this).css('display', 'none');
             }
-
         });
     });
 
@@ -346,9 +343,7 @@ $(function () {
     $('.configurator-option__step-bar-item').on('click', function () {
         $(this).closest('.configurator-option__step-bar-wr').find('.configurator-option__step-bar-item-active').removeClass('configurator-option__step-bar-item-active');
         $(this).addClass('configurator-option__step-bar-item-active');
-
         updateConfiguration.change();
-
     });
 
     $('.configurator-top-block__radio-item').on('click', function () {
@@ -376,6 +371,11 @@ $(function () {
         $('.configurator-option__step-bar-item-active').prev().addClass('configurator-option__step-bar-item-active');
         $('.configurator-option__step-bar-item-active').next().removeClass('configurator-option__step-bar-item-active');
         updateConfiguration.change();
+    });
+
+    $('.configurator-top-block__color-item').on('click', function () {
+        $(this).closest('.configurator-top-block__color-wr').find('.configurator-top-block__color-item-active').removeClass('configurator-top-block__color-item-active');
+        $(this).addClass('configurator-top-block__color-item-active');
     });
 
 });

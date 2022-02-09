@@ -1153,7 +1153,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name">
+                              <input type="radio" name="name11">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1276,7 +1276,108 @@
                </div>
                <div data-block="7" style="display: none" class="configurator-top-block">
                   <div class="configurator-top-block__title">
-                     Выберите интерьер 6
+                     Выберите цвет корпуса <span class="info">?</span><span class="configurator-top-block__title-price">129 000 ₽</span>
+                  </div>
+                  <div class="configurator-top-block__color-wr">
+                     <div class="row">
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/1.png)" class="configurator-top-block__color-item configurator-top-block__color-item-active">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/2.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/3.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/4.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/5.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/6.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/7.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/8.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/9.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/10.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/11.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/12.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="configurator-top-block__title">
+                     Выберите окраску ниже привального бруса <span class="info">?</span><span class="configurator-top-block__title-price">129 000 ₽</span>
+                  </div>
+                  <div class="configurator-top-block__color-wr mb-130">
+                     <div class="row">
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/13.png)" class="configurator-top-block__color-item configurator-top-block__color-item-active">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/14.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/15.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/16.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/17.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                        <div class="col-lg-2">
+                           <div style="background-image: url(../img/color/18.png)" class="configurator-top-block__color-item">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="configurator-top-block__all-btn">
+                     <div class="configurator-top-block__btn-prev">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M5.24219 1L0.999547 5.24264L5.24219 9.48528" stroke="#B2BCCB" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Вернуться назад</span>
+                     </div>
+                     <div class="configurator-top-block__btn-next">
+                        <div class="btn btn-blue">
+                           Перейти далее
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-block="8" style="display: none" class="configurator-top-block">
+                  <div class="configurator-top-block__title">
+                     Выберите интерьер 8
                   </div>
                   <div class="configurator-top-block__block">
                      <div class="configurator-top-block__block-title">
@@ -1285,7 +1386,7 @@
                      <div class="configurator-top-block__all-radio">
                         <div class="configurator-top-block__radio-item configurator-top-block__radio-item-active">
                            <label class="radio">
-                              <input type="radio" name="name11" checked>
+                              <input type="radio" name="name13" checked>
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1296,7 +1397,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name11">
+                              <input type="radio" name="name13">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1307,7 +1408,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name11">
+                              <input type="radio" name="name13">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1318,7 +1419,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name11">
+                              <input type="radio" name="name13">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1329,7 +1430,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name11">
+                              <input type="radio" name="name13">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1340,7 +1441,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name11">
+                              <input type="radio" name="name13">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1351,7 +1452,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name">
+                              <input type="radio" name="name12">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1375,7 +1476,7 @@
                      <div class="configurator-top-block__all-radio">
                         <div class="configurator-top-block__radio-item configurator-top-block__radio-item-active">
                            <label class="radio">
-                              <input type="radio" name="name12" checked>
+                              <input type="radio" name="name14" checked>
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1386,7 +1487,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name12">
+                              <input type="radio" name="name14">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1397,7 +1498,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name12">
+                              <input type="radio" name="name14">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1408,7 +1509,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name12">
+                              <input type="radio" name="name14">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1419,7 +1520,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name12">
+                              <input type="radio" name="name14">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1430,7 +1531,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name12">
+                              <input type="radio" name="name14">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1441,7 +1542,7 @@
                         </div>
                         <div class="configurator-top-block__radio-item">
                            <label class="radio">
-                              <input type="radio" name="name12">
+                              <input type="radio" name="name14">
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
@@ -1468,6 +1569,224 @@
                      <div class="configurator-top-block__btn-next">
                         <div class="btn btn-blue">
                            Перейти далее
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-block="9" style="display: none" class="configurator-top-block">
+                  <div class="configurator-top-block__title">
+                     Выберите интерьер 9
+                  </div>
+                  <div class="configurator-top-block__block">
+                     <div class="configurator-top-block__block-title">
+                        Кокпит
+                     </div>
+                     <div class="configurator-top-block__all-radio">
+                        <div class="configurator-top-block__radio-item configurator-top-block__radio-item-active">
+                           <label class="radio">
+                              <input type="radio" name="name15" checked>
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name15">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name15">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name15">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name15">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name15">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name15">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__open-list">
+                        <span>Открыть весь список</span>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="configurator-top-block__block">
+                     <div class="configurator-top-block__block-title">
+                        Кокпит
+                     </div>
+                     <div class="configurator-top-block__all-radio">
+                        <div class="configurator-top-block__radio-item configurator-top-block__radio-item-active">
+                           <label class="radio">
+                              <input type="radio" name="name16" checked>
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name16">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name16">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name16">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name16">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name16">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                        <div class="configurator-top-block__radio-item">
+                           <label class="radio">
+                              <input type="radio" name="name16">
+                              <span class="radio__radio"></span>
+                              <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                 <span class="info">?</span>
+                              </span>
+                              <span class="price">750 000 ₽</span>
+                           </label>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__open-list border-none">
+                        <span>Открыть весь список</span>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="configurator-top-block__all-btn">
+                     <div class="configurator-top-block__btn-prev">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M5.24219 1L0.999547 5.24264L5.24219 9.48528" stroke="#B2BCCB" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Вернуться назад</span>
+                     </div>
+                     <div class="configurator-top-block__btn-next">
+                        <div class="btn btn-blue">
+                           Перейти далее
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-block="10" style="display: none" class="configurator-top-block">
+                  <div class="configurator-top-block__title">
+                     Итого выбранные опции
+                  </div>
+
+
+                  <div class="configurator-top-block__all-btn">
+                     <div class="configurator-top-block__btn-prev">
+                        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M5.24219 1L0.999547 5.24264L5.24219 9.48528" stroke="#B2BCCB" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Вернуться назад</span>
+                     </div>
+                     <div class="configurator-top-block__btn-next">
+                        <div class="btn btn-blue" data-toggle="modal" data-target="#modal-order">
+                           Заказать Supernova №7
                         </div>
                      </div>
                   </div>
@@ -1500,7 +1819,7 @@
                      Цена: <span>1 320 000 ₽</span>
                   </div>
                   <div class="configurator-inf__btn">
-                     <div class="btn btn-blue">Заказать Supernova №7</div>
+                     <div class="btn btn-blue" data-toggle="modal" data-target="#modal-order">Заказать Supernova №7</div>
                   </div>
                </div>
             </div>

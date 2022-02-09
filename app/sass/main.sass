@@ -1967,8 +1967,13 @@
       position: relative
       z-index: 5
       margin-top: rem(40px)
+      height: rem(280px)
+      img
+         +img-resp
+         object-fit: contain
       @include media-breakpoint-down(sm)
          margin-top: rem(60px)
+         height: auto
       @include media-breakpoint-down(xs)
          margin-top: rem(80px)
    &__supernova
@@ -2345,6 +2350,15 @@
          left: 50%
          top: 50%
          transform: translate(-50%, -50%)
+   &__img
+      height: rem(655px)
+      @include media-breakpoint-down(sm)
+         height: rem(400px)
+      @include media-breakpoint-down(xs)
+         height: rem(240px)
+      img
+         +img-resp
+         object-fit: cover
 
 .section-test-drive
    position: relative
@@ -2836,6 +2850,7 @@
       vertical-align: middle
 
 .info
+   cursor: pointer
    color: #fff
    position: relative
    z-index: 2
@@ -2928,6 +2943,8 @@
       display: inline-block
    &__btn-next
       letter-spacing: 0
+      .btn
+         letter-spacing: 0
    &__btn-prev
       user-select: none
       color: #B2BCCB
@@ -2949,6 +2966,23 @@
       span
          vertical-align: middle
          margin-left: 10px
+   &__color-wr
+      margin: 0 rem(50px)
+      margin-bottom: rem(40px)
+      padding-top: rem(30px)
+      border-bottom: 1px solid #DBE3EC
+   &__title-price
+      font-size: rem(18px)
+      font-family: $font-medium
+      float: right
+   &__color-item
+      cursor: pointer
+      height: rem(81px)
+      margin-bottom: rem(30px)
+      background-repeat: no-repeat
+      background-size: cover
+   &__color-item-active
+      border: 6px solid $blue
 
 .revers
    flex-direction: row-reverse
@@ -2972,7 +3006,7 @@
          font-size: rem(16px)
          color: #8E9EAE
    &__detail
-      margin-bottom: rem(40px)
+      margin-bottom: rem(30px)
    &__detail-item
       font-size: rem(13px)
       border-top: 1px solid #E0E6EC
@@ -2994,3 +3028,17 @@
    &__btn
       .btn
          width: 100%
+         letter-spacing: 0
+
+.modal-order
+   .configurator-inf__option li
+      display: inline-block
+      margin-right: rem(20px)
+   .configurator-inf__price
+      font-size: rem(22px)
+      text-align: left
+   .configurator-inf__title
+      margin-bottom: rem(10px)
+
+.mb-130
+   margin-bottom: rem(130px)
