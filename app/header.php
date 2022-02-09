@@ -11,8 +11,8 @@
 
    <title>Title</title>
    <link rel="icon" href="img/favicon.svg">
-   <link rel="stylesheet" href="css/app.min.css?var=1.0">
-   <script src="js/app.min.js?var=1.0"></script>
+   <link rel="stylesheet" href="css/app.min.css?var=2.0">
+   <script src="js/app.min.js?var=2.0"></script>
 
 </head>
 

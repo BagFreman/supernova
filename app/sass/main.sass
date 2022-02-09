@@ -274,6 +274,7 @@
    font-family: $font-bold
 
 .btn
+   user-select: none
    letter-spacing: 0.14em
    height: rem(56px)
    cursor: pointer
@@ -2744,3 +2745,252 @@
             display: inline-block
          span
             border-bottom: 4px solid $blue
+
+.configurator-option
+   padding-bottom: rem(120px)
+   &__link
+      font-family: $font-bebas-regular
+      font-size: rem(18px)
+      text-transform: uppercase
+      letter-spacing: 2px
+      color: $blue
+      display: block
+      margin-top: rem(90px)
+      margin-bottom: rem(20px)
+      +tr
+      &:hover
+         color: #0071BC
+         +tr
+      span
+         padding-left: rem(13px)
+         text-decoration: underline
+         span, svg
+            display: inline-block
+            vertical-align: inital
+   &__step
+      color: #B5B5B5
+      font-size: rem(18px)
+      margin-bottom: rem(20px)
+   &__title, &__title-block
+      font-family: $font-light
+      font-size: rem(30px)
+      line-height: rem(34px)
+   &__title
+      margin-top: rem(80px)
+   &__step-bar
+      background-color: #fff
+   &__step-bar-name, &__step-bar-item
+      font-size: rem(16px)
+      line-height: rem(21px)
+      padding: rem(20px) rem(30px)
+      border-bottom: 1px solid #EDF3FA
+   &__step-bar-name
+      padding-top: rem(50px)
+      font-family: $font-bold
+   &__step-bar-item
+      cursor: pointer
+      +tr
+      &:hover
+         background-color: #F3F8FC
+         +tr
+   &__step-bar-item:nth-last-child(1)
+      border-bottom: none
+   &__step-bar-item-active
+      color: $blue
+      text-decoration: underline
+      background-color: #F3F8FC
+
+.radio
+   cursor: pointer
+   input
+      display: none
+   &__radio
+      vertical-align: middle
+      position: relative
+      padding-left: rem(50px)
+      font-size: rem(16px)
+      &::before
+         content: ''
+         width: rem(32px)
+         height: rem(32px)
+         border: 2px solid $blue
+         border-radius: 100%
+         position: absolute
+         left: 0
+         top: 50%
+         transform: translateY(-50%)
+   input:checked + &__radio
+      &::after
+         content: ''
+         width: rem(16px)
+         height: rem(16px)
+         border-radius: 100%
+         background-color: $blue
+         position: absolute
+         left: rem(8px)
+         top: 50%
+         transform: translateY(-50%)
+   &__text
+      width: rem(400px)
+      display: inline-block
+      vertical-align: middle
+
+.info
+   color: #fff
+   position: relative
+   z-index: 2
+   margin-left: 10px
+   &:hover
+      &::after
+         background-color: $blue
+         +tr
+   &:active
+      &::after
+         background-color: $red
+   &::after
+      content: ''
+      width: 20px
+      height: 20px
+      background-color: #A1C4DC
+      position: absolute
+      z-index: -1
+      border-radius: 100%
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      +tr
+
+.configurator-top-block
+   background-color: #fff
+   padding: rem(50px) 0
+   font-size: rem(18px)
+   &__title
+      margin: 0 rem(50px)
+      padding-bottom: rem(20px)
+      font-family: $font-bold
+      border-bottom: 1px solid #DBE3EC
+   &__block-title
+      padding-top: rem(25px)
+      padding-bottom: rem(15px)
+      margin: 0 rem(50px)
+      font-family: $font-bold
+   &__radio-item
+      .radio
+         cursor: pointer
+         width: 100%
+         padding: rem(25px) rem(50px)
+         +tr
+         &:hover
+            background-color: #F3F8FC
+            +tr
+   &__all-radio
+      height: rem(380px)
+      overflow: hidden
+   &__all-radio-active
+      height: auto
+   &__radio-item-active
+      background-color: #F3F8FC
+   &__open-list
+      user-select: none
+      cursor: pointer
+      margin: 0 rem(50px)
+      border-bottom: 1px solid #DBE3EC
+      font-size: rem(14px)
+      color: #2D2B2B
+      padding-bottom: rem(30px)
+      margin-top: rem(10px)
+      +tr
+      svg
+         margin-left: rem(5px)
+      &:hover
+         color: $blue
+         svg
+            path
+               stroke: $blue
+   &__open-list-active
+      color: $blue
+      svg
+         transform: rotate(180deg)
+         path
+            stroke: $blue
+   .price
+      font-family: $font-medium
+      font-size: rem(18px)
+      float: right
+   .border-none
+      border: none
+   &__all-btn
+      display: flex
+      justify-content: space-between
+      align-items: baseline
+      margin: 0 rem(50px)
+   &__btn-prev, &__btn-next
+      display: inline-block
+   &__btn-next
+      letter-spacing: 0
+   &__btn-prev
+      user-select: none
+      color: #B2BCCB
+      font-size: rem(14px)
+      line-height: rem(16px)
+      cursor: pointer
+      +tr
+      &:hover
+         color: #0071BC
+         +tr
+         svg
+            path
+               stroke: #0071BC
+      &:active
+         color: #004674
+         svg
+            path
+               stroke: #004674
+      span
+         vertical-align: middle
+         margin-left: 10px
+
+.revers
+   flex-direction: row-reverse
+
+.configurator-inf
+   background-color: #fff
+   padding: rem(30px)
+   &__img
+      width: 100%
+      height: 200px
+      margin-bottom: rem(20px)
+      img
+         +img-resp
+         object-fit: contain
+   &__title
+      font-size: rem(22px)
+      margin-bottom: rem(20px)
+   &__option
+      margin-bottom: rem(15px)
+      li
+         font-size: rem(16px)
+         color: #8E9EAE
+   &__detail
+      margin-bottom: rem(40px)
+   &__detail-item
+      font-size: rem(13px)
+      border-top: 1px solid #E0E6EC
+      padding: rem(12px) 0
+      svg
+         margin-right: 5px
+      span
+         float: right
+         font-size: rem(14px)
+         font-family: $font-bold
+   &__detail-item:nth-last-child(1)
+      border-bottom: 1px solid #E0E6EC
+   &__price
+      color: $blue
+      font-size: rem(16px)
+      font-family: $font-bold
+      margin-bottom: rem(20px)
+      text-align: right
+   &__btn
+      .btn
+         width: 100%

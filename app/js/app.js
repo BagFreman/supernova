@@ -314,4 +314,68 @@ $(function () {
         $(this).find('span').html('0' + dotNumbers); dotNumbers++;
     });
 
+
+    // configurator
+
+    let updateConfiguration = $(this);
+
+    updateConfiguration.change(function () {
+        let a = $('.configurator-option__step-bar-item-active').attr('data-num');
+        let b = $('.configurator-option__step-bar-item-active span').text();
+        let i = 1;
+
+        $('.configurator-option__step .count').html(a);
+        $('.configurator-option__title-block').html(b);
+
+        $('.configurator-top-block').each(function () {
+
+            let dataBlock = $(this).attr('data-block');
+
+            i++;
+
+            if (a == dataBlock) {
+                $(this).css('display', 'block')
+            } else {
+                $(this).css('display', 'none');
+            }
+
+        });
+    });
+
+
+    $('.configurator-option__step-bar-item').on('click', function () {
+        $(this).closest('.configurator-option__step-bar-wr').find('.configurator-option__step-bar-item-active').removeClass('configurator-option__step-bar-item-active');
+        $(this).addClass('configurator-option__step-bar-item-active');
+
+        updateConfiguration.change();
+
+    });
+
+    $('.configurator-top-block__radio-item').on('click', function () {
+        $(this).closest('.configurator-top-block__all-radio').find('.configurator-top-block__radio-item-active').removeClass('configurator-top-block__radio-item-active');
+        $(this).addClass('configurator-top-block__radio-item-active');
+    });
+
+    $('.configurator-top-block__open-list').on('click', function () {
+        $(this).toggleClass('configurator-top-block__open-list-active');
+        $(this).closest('.configurator-top-block__block').find('.configurator-top-block__all-radio').toggleClass('configurator-top-block__all-radio-active');
+
+        // let a = $(this).closest('.configurator-top-block__block').find('.configurator-top-block__open-list').hasClass('configurator-top-block__open-list-active');
+        // let b = $(this).closest('.configurator-top-block__block').find('.configurator-top-block__open-list span').text('Скрыть список');
+        // let с = $(this).closest('.configurator-top-block__block').find('.configurator-top-block__open-list span').text('Открыть весь список');
+        // if (a ? b : c);
+    });
+
+    $('.configurator-top-block__btn-next').on('click', function () {
+        $('.configurator-option__step-bar-item-active').next().addClass('configurator-option__step-bar-item-active');
+        $('.configurator-option__step-bar-item-active').prev().removeClass('configurator-option__step-bar-item-active');
+        updateConfiguration.change();
+    });
+
+    $('.configurator-top-block__btn-prev').on('click', function () {
+        $('.configurator-option__step-bar-item-active').prev().addClass('configurator-option__step-bar-item-active');
+        $('.configurator-option__step-bar-item-active').next().removeClass('configurator-option__step-bar-item-active');
+        updateConfiguration.change();
+    });
+
 });
