@@ -26,7 +26,7 @@
    <div class="configurator-option">
       <div class="container container-head">
          <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 order-1">
                <a href="" class="configurator-option__link">
                   <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                      <path d="M7.26499 13.5301L1 7.26514L7.26499 1.00015" stroke="#0071BC" />
@@ -35,7 +35,7 @@
                </a>
 
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6 order-1 d-none d-lg-block">
                <div class="configurator-option__wr">
                   <div class="configurator-option__step">
                      <span class="count">1</span> шаг из 10 шагов
@@ -45,7 +45,7 @@
                   </div>
                </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 order-lg-2">
                <h3 class="configurator-option__title">
                   Модель SUPERNOVA N7
                </h3>
@@ -92,6 +92,15 @@
                </div>
             </div>
             <div class="col-lg-6">
+               <div class="configurator-option__wr d-lg-none">
+                  <div class="configurator-option__title-block">
+                     Двигатель системы управления
+                  </div>
+                  <div class="configurator-option__step">
+                     <span class="count">1</span> шаг из 10 шагов
+                  </div>
+               </div>
+
                <div data-block="1" class="configurator-top-block">
                   <div class="configurator-top-block__title">
                      Выберите интерьер 1
@@ -1775,8 +1784,121 @@
                   <div class="configurator-top-block__title">
                      Итого выбранные опции
                   </div>
-
-
+                  <div class="configurator-top-block__list">
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Двигатель
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Навигационное оборудование и акустическая система
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Система водоснабжения
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Тепло и комфорт
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Стоянка и швартовка/транспортировка и хранение
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Интерьер
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           <div style="background-image: url(../img/color/1.png)" class="configurator-top-block__list-color"></div> Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           <div style="background-image: url(../img/color/2.png)" class="configurator-top-block__list-color"></div> Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Внешний вид
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Безопасность и спасение
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Дельные вещи и прочее
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                     <div class="configurator-top-block__list-item">
+                        <div class="configurator-top-block__list-title">
+                           Общая конфигурация
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                        <div class="configurator-top-block__list-option">
+                           Носовое сиденье с рундуком <span>750 000 ₽</span>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="configurator-top-block__sum">
+                     Цена: <span>1 320 000 ₽</span>
+                  </div>
                   <div class="configurator-top-block__all-btn">
                      <div class="configurator-top-block__btn-prev">
                         <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1785,7 +1907,10 @@
                         <span>Вернуться назад</span>
                      </div>
                      <div class="configurator-top-block__btn-next">
-                        <div class="btn btn-blue" data-toggle="modal" data-target="#modal-order">
+                        <div class="btn btn-border-m btn-fix" data-toggle="modal" data-target="#modal-payment">
+                           Получить расчет на почту
+                        </div>
+                        <div class="btn btn-blue btn-fix" data-toggle="modal" data-target="#modal-order">
                            Заказать Supernova №7
                         </div>
                      </div>

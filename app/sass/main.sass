@@ -444,6 +444,17 @@
       font-size: rem(16px)
       color: $gray-light
       margin-bottom: rem(30px)
+   &__p
+      color: #676767
+      font-family: $font-light
+      font-size: rem(16px)
+      margin-bottom: rem(30px)
+      @include media-breakpoint-down(sm)
+         text-align: center
+
+.modal-payment
+   .modal__title
+      margin-bottom: rem(25px)
 
 .input
    height: rem(56px)
@@ -2762,6 +2773,14 @@
 
 .configurator-option
    padding-bottom: rem(120px)
+   @include media-breakpoint-down(md)
+      padding-bottom: rem(80px)
+   @include media-breakpoint-down(sm)
+      padding-bottom: rem(40px)
+   @include media-breakpoint-down(xs)
+      padding-bottom: rem(20px)
+   &__wr
+      padding: rem(20px) 0
    &__link
       font-family: $font-bebas-regular
       font-size: rem(18px)
@@ -2772,6 +2791,10 @@
       margin-top: rem(90px)
       margin-bottom: rem(20px)
       +tr
+      @include media-breakpoint-down(md)
+         margin-top: rem(30px)
+      @include media-breakpoint-down(sm)
+         margin-top: rem(10px)
       &:hover
          color: #0071BC
          +tr
@@ -2785,12 +2808,20 @@
       color: #B5B5B5
       font-size: rem(18px)
       margin-bottom: rem(20px)
+      @include media-breakpoint-down(md)
+         margin-bottom: 0
    &__title, &__title-block
       font-family: $font-light
       font-size: rem(30px)
       line-height: rem(34px)
+      @include media-breakpoint-down(sm)
+         font-size: rem(24px)
+         line-height: rem(28px)
    &__title
       margin-top: rem(80px)
+      padding-bottom: rem(20px)
+      @include media-breakpoint-down(md)
+         margin-top: 0
    &__step-bar
       background-color: #fff
    &__step-bar-name, &__step-bar-item
@@ -2801,6 +2832,8 @@
    &__step-bar-name
       padding-top: rem(50px)
       font-family: $font-bold
+      @include media-breakpoint-down(md)
+         padding-top: rem(20px)
    &__step-bar-item
       cursor: pointer
       +tr
@@ -2845,7 +2878,7 @@
          top: 50%
          transform: translateY(-50%)
    &__text
-      width: rem(400px)
+      width: auto
       display: inline-block
       vertical-align: middle
 
@@ -2879,17 +2912,26 @@
    background-color: #fff
    padding: rem(50px) 0
    font-size: rem(18px)
+   @include media-breakpoint-down(md)
+      margin-bottom: rem(20px)
+   @include media-breakpoint-down(sm)
+      padding: rem(20px) 0
    &__title
       margin: 0 rem(50px)
       padding-bottom: rem(20px)
       font-family: $font-bold
       border-bottom: 1px solid #DBE3EC
+      @include media-breakpoint-down(sm)
+         margin: 0 rem(15px)
    &__block-title
       padding-top: rem(25px)
       padding-bottom: rem(15px)
       margin: 0 rem(50px)
       font-family: $font-bold
+      @include media-breakpoint-down(sm)
+         margin: 0 rem(15px)
    &__radio-item
+      position: relative
       .radio
          cursor: pointer
          width: 100%
@@ -2915,6 +2957,8 @@
       padding-bottom: rem(30px)
       margin-top: rem(10px)
       +tr
+      @include media-breakpoint-down(sm)
+         margin: 0 rem(20px)
       svg
          margin-left: rem(5px)
       &:hover
@@ -2932,6 +2976,11 @@
       font-family: $font-medium
       font-size: rem(18px)
       float: right
+      @include media-breakpoint-down(sm)
+         float: inherit
+         display: block
+         margin-left: 35px
+         margin-top: 10px
    .border-none
       border: none
    &__all-btn
@@ -2939,12 +2988,17 @@
       justify-content: space-between
       align-items: baseline
       margin: 0 rem(50px)
+      @include media-breakpoint-down(sm)
+         margin: 0 rem(20px)
    &__btn-prev, &__btn-next
       display: inline-block
    &__btn-next
       letter-spacing: 0
       .btn
          letter-spacing: 0
+         border: 1px solid $blue
+   .btn-fix
+      padding: rem(15px) rem(20px)
    &__btn-prev
       user-select: none
       color: #B2BCCB
@@ -2971,6 +3025,8 @@
       margin-bottom: rem(40px)
       padding-top: rem(30px)
       border-bottom: 1px solid #DBE3EC
+      @include media-breakpoint-down(sm)
+         margin: 0 rem(15px)
    &__title-price
       font-size: rem(18px)
       font-family: $font-medium
@@ -2983,6 +3039,69 @@
       background-size: cover
    &__color-item-active
       border: 6px solid $blue
+   .btn-border-m
+      border: 1px solid $blue
+      background-color: inherit
+      color: $blue
+      &:hover
+         box-shadow: none
+         background-color: $blue
+         color: #fff
+      &:active
+         background-color: #0D90E8
+   .radio
+      @include media-breakpoint-down(sm)
+         padding: rem(10px) rem(15px)
+   .radio__radio::before
+      @include media-breakpoint-down(sm)
+         width: rem(22px)
+         height: rem(22px)
+   input:checked+.radio__radio::after
+      @include media-breakpoint-down(sm)
+         width: rem(10px)
+         height: rem(10px)
+         left: rem(6px)
+   .radio__radio
+      @include media-breakpoint-down(sm)
+         padding-left: rem(35px)
+   .info
+      @include media-breakpoint-down(sm)
+         position: absolute
+         right: 20px
+         bottom: 10px
+   &__list
+      margin: 0 rem(50px)
+      border-bottom: 1px solid #DBE3EC
+      padding: rem(30px) 0 rem(0px) 0
+   &__list-item
+      margin-bottom: rem(30px)
+   &__list-title
+      font-size: rem(16px)
+      line-height: rem(20px)
+      font-family: $font-medium
+      color: #9D9D9D
+   &__list-option
+      color: #000
+      font-size: rem(16px)
+      position: relative
+      margin-bottom: rem(5px)
+      span
+         float: right
+         font-size: rem(18px)
+   &__sum
+      font-family: $font-bold
+      margin: 0 rem(50px)
+      color: $blue
+      font-size: rem(22px)
+      padding: rem(40px) 0 rem(80px)
+   &__list-color
+      display: inline-block
+      width: rem(23px)
+      height: rem(23px)
+      background-repeat: no-repeat
+      background-size: cover
+      vertical-align: middle
+      margin-right: 5px
 
 .revers
    flex-direction: row-reverse
