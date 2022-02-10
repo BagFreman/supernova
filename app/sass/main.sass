@@ -2990,13 +2990,18 @@
       margin: 0 rem(50px)
       @include media-breakpoint-down(sm)
          margin: 0 rem(20px)
+         display: block
    &__btn-prev, &__btn-next
       display: inline-block
+      @include media-breakpoint-down(sm)
+         display: block
    &__btn-next
       letter-spacing: 0
       .btn
          letter-spacing: 0
          border: 1px solid $blue
+         @include media-breakpoint-down(xs)
+            width: 100%
    .btn-fix
       padding: rem(15px) rem(20px)
    &__btn-prev
@@ -3005,6 +3010,8 @@
       font-size: rem(14px)
       line-height: rem(16px)
       cursor: pointer
+      @include media-breakpoint-down(sm)
+         margin-bottom: rem(10px)
       +tr
       &:hover
          color: #0071BC
@@ -3033,10 +3040,19 @@
       float: right
    &__color-item
       cursor: pointer
+      width: 100%
       height: rem(81px)
       margin-bottom: rem(30px)
       background-repeat: no-repeat
       background-size: cover
+      @media screen and ( max-width: 1400px )
+         height: rem(70px)
+      @media screen and ( max-width: 1300px )
+         height: rem(60px)
+      @media screen and ( max-width: 1200px )
+         height: rem(50px)
+      @media screen and ( max-width: 1100px )
+         height: rem(40px)
    &__color-item-active
       border: 6px solid $blue
    .btn-border-m
