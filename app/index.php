@@ -30,6 +30,7 @@
                <li><a href="accessories.php">Аксессуары</a></li>
                <li><a href="about.php">О заводе</a></li>
                <li><a href="contact.php">Контакты</a></li>
+               <li><a href="404.php">404</a></li>
             </ul>
          </div>
       </div>

@@ -1289,47 +1289,47 @@
                   </div>
                   <div class="configurator-top-block__color-wr">
                      <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/1.png)" class="configurator-top-block__color-item configurator-top-block__color-item-active">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/2.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/3.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/4.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/5.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/6.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/7.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/8.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/9.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/10.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
-                        <div class="col-lg-2 col-md-3 ">
+                        <div class="col-lg-2 col-md-2 ">
                            <div style="background-image: url(img/color/11.png)" class="configurator-top-block__color-item">
                            </div>
                         </div>
