@@ -354,11 +354,6 @@ $(function () {
     $('.configurator-top-block__open-list').on('click', function () {
         $(this).toggleClass('configurator-top-block__open-list-active');
         $(this).closest('.configurator-top-block__block').find('.configurator-top-block__all-radio').toggleClass('configurator-top-block__all-radio-active');
-
-        // let a = $(this).closest('.configurator-top-block__block').find('.configurator-top-block__open-list').hasClass('configurator-top-block__open-list-active');
-        // let b = $(this).closest('.configurator-top-block__block').find('.configurator-top-block__open-list span').text('Скрыть список');
-        // let с = $(this).closest('.configurator-top-block__block').find('.configurator-top-block__open-list span').text('Открыть весь список');
-        // if (a ? b : c);
     });
 
     $('.configurator-top-block__btn-next').on('click', function () {
@@ -377,5 +372,20 @@ $(function () {
         $(this).closest('.configurator-top-block__color-wr').find('.configurator-top-block__color-item-active').removeClass('configurator-top-block__color-item-active');
         $(this).addClass('configurator-top-block__color-item-active');
     });
+
+    $('.services__item').on('click', function () {
+       let a =  $(this).find('.services__title').text();
+       $('#modal-service').find('.modal__title').text(a);
+       $('#modal-service').find('.input-service-name').val(a);
+    });
+
+    // ** Slide
+
+    $('.owl-slider-btn__item').on('click', function() {
+        $(this).closest('.owl-slider-btn').find('.owl-slider-btn__active').removeClass('owl-slider-btn__active');
+        $(this).addClass('owl-slider-btn__active');
+    });
+
+    // ** end Slide
 
 });

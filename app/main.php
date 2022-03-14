@@ -269,7 +269,7 @@
          <div class="col-lg-7">
             <div class="owl-carousel owl-theme design-slide">
                <div class="design-slide__img">
-                  <div class="design-slide__pl d-none d-lg-block">
+                  <div class="design-slide__pl d-none d-lg-block" data-toggle="modal" data-target="#modal-slider">
                      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
                         <path d="M21.2617 18.2703L27.2017 22.2303" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />

@@ -3202,3 +3202,53 @@
    .btn
       &:hover
          color: #fff
+
+.modal-slider
+   .modal-dialog
+      max-width: rem(1200px)
+   .modal-content
+      padding: rem(30px) !important
+   &__slide-item
+      height: rem(635px)
+      img
+         +img-resp()
+   .owl-nav
+      position: absolute
+      bottom: 0
+      right: 0
+      @include media-breakpoint-down(md)
+         bottom: inherit
+         width: 100%
+      button
+         width: rem(100px)
+         height: rem(60px)
+         position: relative
+         @include media-breakpoint-down(md)
+            background-color: inherit !important
+            width: auto
+            img
+               width: rem(30px)
+      .owl-prev, .owl-next
+         background-color: #ECEFF5 !important
+         @include media-breakpoint-down(md)
+            background-color: inherit !important
+   .owl-slider-btn
+      margin-top: rem(20px)
+      &__item
+         outline: 6px solid #ffffff
+         display: inline-block
+         width: 100%
+         margin-bottom: rem(15px)
+         height: rem(100px)
+         img
+            +img-resp()
+            object-fit: cover
+      &__active
+         outline: 6px solid $blue !important
+         outline-offset: -6px
+      .row
+         margin-right: -5px
+         margin-left: -5px
+         .col-lg-2
+            padding-right: 5px
+            padding-left: 5px
