@@ -124,7 +124,7 @@ $(function () {
         loop: true,
         margin: 70,
         nav: true,
-        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        navText: ['<img src="/img/icon/arrow-slider-left.svg" alt="">', '<img src="/img/icon/arrow-slider-right.svg" alt="">'],
         dotsEach: true,
         responsive: {
             0: {
@@ -151,7 +151,7 @@ $(function () {
         loop: true,
         margin: 0,
         nav: true,
-        navText: ['<img src="img/icon/header-left.svg" alt="">', '<img src="img/icon/header-right.svg" alt="">'],
+        navText: ['<img src="/img/icon/header-left.svg" alt="">', '<img src="/img/icon/header-right.svg" alt="">'],
         responsive: {
             0: {
                 items: 1
@@ -164,40 +164,6 @@ $(function () {
             }
         }
     })
-
-    // slide boat
-
-    $('.boat-slide, .test-drive-slide').owlCarousel({
-        loop: true,
-        margin: 30,
-        nav: true,
-        smartSpeed: 400,
-        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    })
-
-    let boatModalNumber = 0;
-    let boatModal = [
-        'A34',
-        'F35',
-        'S36',
-        'G37',
-        'V67'
-    ]
-
-    $('.boat-slide .owl-dot, .test-drive-slide .owl-dot').each(function () {
-        $(this).find('span').html(boatModal[boatModalNumber]); boatModalNumber++;
-    });
 
     //slide design
 
@@ -206,7 +172,7 @@ $(function () {
         margin: 30,
         nav: true,
         smartSpeed: 400,
-        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        navText: ['<img src="/img/icon/arrow-slider-left.svg" alt="">', '<img src="/img/icon/arrow-slider-right.svg" alt="">'],
         responsive: {
             0: {
                 items: 1
@@ -293,7 +259,7 @@ $(function () {
         smartSpeed: 400,
         dotsEach: true,
         stagePadding: 100,
-        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        navText: ['<img src="/img/icon/arrow-slider-left.svg" alt="">', '<img src="/img/icon/arrow-slider-right.svg" alt="">'],
         responsive: {
             0: {
                 items: 1,
@@ -385,7 +351,7 @@ $(function () {
         smartSpeed: 400,
         URLhashListener:true,
         startPosition: 'URLHash',
-        navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+        navText: ['<img src="/img/icon/arrow-slider-left.svg" alt="">', '<img src="/img/icon/arrow-slider-right.svg" alt="">'],
         responsive: {
             0: {
                 items: 1
@@ -427,5 +393,25 @@ $(function () {
     });
 
     // ** End скрыть список
+
+    // ** tooltip
+
+    $('.info-slider').owlCarousel({
+        loop: false,
+        dots: false,
+        margin: 1,
+        nav: true,
+        smartSpeed: 400,
+        URLhashListener:true,
+        startPosition: 'URLHash',
+        navText: ['<img src="/img/icon/tool-ar-left.svg" alt="">', '<img src="/img/icon/tool-ar-right.svg" alt="">'],
+        responsive: {
+            0: {
+                items: 1
+            }
+        }
+    });
+
+    // ** End tooltip
 
 });

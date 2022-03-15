@@ -94,7 +94,7 @@
             <div class="col-lg-6">
                <div class="configurator-option__wr d-lg-none">
                   <div class="configurator-option__title-block">
-                     Двигатель системы управления
+                     Двигатель и системы управления
                   </div>
                   <div class="configurator-option__step">
                      <span class="count">1</span> шаг из 10 шагов
@@ -116,77 +116,264 @@
                               <span class="radio__radio"></span>
                               <span class="radio__text">
                                  Носовое сиденье с рундуком
-                                 <span class="info">?</span>
+                                   <span class="info">
+                                    <span>?</span>
+                                    <span class="info-tooltip">
+                                        <div class="owl-carousel owl-theme info-slider">
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png"  alt="">
+                                             </div>
+                                        </div>
+                                        <div class="info-tooltip__title">
+                                            Двигатель Yamaha 2JZ с механическим управлением
+                                        </div>
+                                        <div class="info-tooltip__desc">
+                                            Общее название типа радионавигационной
+                                            системы для ориентации на море и в воздухе.
+                                        </div>
+                                    </span>
+                                 </span>
+                                 <div class="modal fade modal-slider" id="modal-slider" tabindex="-1" aria-hidden="true">
+                                     <div class="modal-dialog">
+                                         <div class="modal-content">
+                                             <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                                                 <svg width="14" height="14" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                     <path d="M1 1.5L15 15.5M1 15.5L15 1.5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" />
+                                                 </svg>
+                                             </div>
+                                             <div class="owl-carousel owl-theme modal-slider__slide">
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-1" alt="">
+                                                 </div>
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-2" alt="">
+                                                 </div>
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-3" alt="">
+                                                 </div>
+                                             </div>
+                                             <div class="owl-slider-btn d-none d-lg-block">
+                                                 <div class="row">
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-1" class="owl-slider-btn__item owl-slider-btn__active">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-2" class="owl-slider-btn__item">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-3" class="owl-slider-btn__item">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                             </div>
                               </span>
                               <span class="price">750 000 ₽</span>
                            </label>
                         </div>
-                        <div class="configurator-top-block__radio-item">
-                           <label class="radio">
-                              <input type="radio" name="name">
-                              <span class="radio__radio"></span>
-                              <span class="radio__text">
+                         <div class="configurator-top-block__radio-item">
+                             <label class="radio">
+                                 <input type="radio" name="name">
+                                 <span class="radio__radio"></span>
+                                 <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                    <span class="info">
+                                    <span>?</span>
+                                    <span class="info-tooltip">
+                                        <div class="owl-carousel owl-theme info-slider">
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png"  alt="">
+                                             </div>
+                                        </div>
+                                        <div class="info-tooltip__title">
+                                            Двигатель Yamaha 2JZ с механическим управлением
+                                        </div>
+                                        <div class="info-tooltip__desc">
+                                            Общее название типа радионавигационной
+                                            системы для ориентации на море и в воздухе.
+                                        </div>
+                                    </span>
+                                 </span>
+                                 <div class="modal fade modal-slider" id="modal-slider" tabindex="-1" aria-hidden="true">
+                                     <div class="modal-dialog">
+                                         <div class="modal-content">
+                                             <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                                                 <svg width="14" height="14" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                     <path d="M1 1.5L15 15.5M1 15.5L15 1.5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" />
+                                                 </svg>
+                                             </div>
+                                             <div class="owl-carousel owl-theme modal-slider__slide">
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-1" alt="">
+                                                 </div>
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-2" alt="">
+                                                 </div>
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-3" alt="">
+                                                 </div>
+                                             </div>
+                                             <div class="owl-slider-btn d-none d-lg-block">
+                                                 <div class="row">
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-1" class="owl-slider-btn__item owl-slider-btn__active">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-2" class="owl-slider-btn__item">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-3" class="owl-slider-btn__item">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                             </div>
+                              </span>
+                                 <span class="price">750 000 ₽</span>
+                             </label>
+                         </div>
+                         <div class="configurator-top-block__radio-item">
+                             <label class="radio">
+                                 <input type="radio" name="name">
+                                 <span class="radio__radio"></span>
+                                 <span class="radio__text">
+                                 Носовое сиденье с рундуком
+                                  <span class="info">
+                                    <span>?</span>
+                                    <span class="info-tooltip">
+                                        <div class="owl-carousel owl-theme info-slider">
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png" alt="">
+                                             </div>
+                                             <div class="info-slider__slide-item" data-toggle="modal" data-target="#modal-slider">
+                                                 <img src="img/conf.png"  alt="">
+                                             </div>
+                                        </div>
+                                        <div class="info-tooltip__title">
+                                            Двигатель Yamaha 2JZ с механическим управлением
+                                        </div>
+                                        <div class="info-tooltip__desc">
+                                            Общее название типа радионавигационной
+                                            системы для ориентации на море и в воздухе.
+                                        </div>
+                                    </span>
+                                 </span>
+                                 <div class="modal fade modal-slider" id="modal-slider" tabindex="-1" aria-hidden="true">
+                                     <div class="modal-dialog">
+                                         <div class="modal-content">
+                                             <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                                                 <svg width="14" height="14" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                     <path d="M1 1.5L15 15.5M1 15.5L15 1.5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" />
+                                                 </svg>
+                                             </div>
+                                             <div class="owl-carousel owl-theme modal-slider__slide">
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-1" alt="">
+                                                 </div>
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-2" alt="">
+                                                 </div>
+                                                 <div class="modal-slider__slide-item">
+                                                     <img src="img/conf.png" data-hash="t-service-3" alt="">
+                                                 </div>
+                                             </div>
+                                             <div class="owl-slider-btn d-none d-lg-block">
+                                                 <div class="row">
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-1" class="owl-slider-btn__item owl-slider-btn__active">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-2" class="owl-slider-btn__item">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                     <div class="col-lg-2">
+                                                         <a href="#t-service-3" class="owl-slider-btn__item">
+                                                             <img src="img/conf.png" alt="">
+                                                         </a>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                             </div>
+                              </span>
+                                 <span class="price">750 000 ₽</span>
+                             </label>
+                         </div>
+                         <div class="configurator-top-block__radio-item">
+                             <label class="radio">
+                                 <input type="radio" name="name">
+                                 <span class="radio__radio"></span>
+                                 <span class="radio__text">
                                  Носовое сиденье с рундуком
                                  <span class="info">?</span>
                               </span>
-                              <span class="price">750 000 ₽</span>
-                           </label>
-                        </div>
-                        <div class="configurator-top-block__radio-item">
-                           <label class="radio">
-                              <input type="radio" name="name">
-                              <span class="radio__radio"></span>
-                              <span class="radio__text">
+                                 <span class="price">750 000 ₽</span>
+                             </label>
+                         </div>
+                         <div class="configurator-top-block__radio-item">
+                             <label class="radio">
+                                 <input type="radio" name="name">
+                                 <span class="radio__radio"></span>
+                                 <span class="radio__text">
                                  Носовое сиденье с рундуком
                                  <span class="info">?</span>
                               </span>
-                              <span class="price">750 000 ₽</span>
-                           </label>
-                        </div>
-                        <div class="configurator-top-block__radio-item">
-                           <label class="radio">
-                              <input type="radio" name="name">
-                              <span class="radio__radio"></span>
-                              <span class="radio__text">
+                                 <span class="price">750 000 ₽</span>
+                             </label>
+                         </div>
+                         <div class="configurator-top-block__radio-item">
+                             <label class="radio">
+                                 <input type="radio" name="name">
+                                 <span class="radio__radio"></span>
+                                 <span class="radio__text">
                                  Носовое сиденье с рундуком
                                  <span class="info">?</span>
                               </span>
-                              <span class="price">750 000 ₽</span>
-                           </label>
-                        </div>
-                        <div class="configurator-top-block__radio-item">
-                           <label class="radio">
-                              <input type="radio" name="name">
-                              <span class="radio__radio"></span>
-                              <span class="radio__text">
-                                 Носовое сиденье с рундуком
-                                 <span class="info">?</span>
-                              </span>
-                              <span class="price">750 000 ₽</span>
-                           </label>
-                        </div>
-                        <div class="configurator-top-block__radio-item">
-                           <label class="radio">
-                              <input type="radio" name="name">
-                              <span class="radio__radio"></span>
-                              <span class="radio__text">
-                                 Носовое сиденье с рундуком
-                                 <span class="info">?</span>
-                              </span>
-                              <span class="price">750 000 ₽</span>
-                           </label>
-                        </div>
-                        <div class="configurator-top-block__radio-item">
-                           <label class="radio">
-                              <input type="radio" name="name">
-                              <span class="radio__radio"></span>
-                              <span class="radio__text">
-                                 Носовое сиденье с рундуком
-                                 <span class="info">?</span>
-                              </span>
-                              <span class="price">750 000 ₽</span>
-                           </label>
-                        </div>
+                                 <span class="price">750 000 ₽</span>
+                             </label>
+                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
                         <span>Раскрыть полный список</span>
@@ -1289,53 +1476,77 @@
                   </div>
                   <div class="configurator-top-block__color-wr">
                      <div class="row">
+                        <div class="col-lg-2 col-md-2">
+                            <label class="configurator-top-block__color-item configurator-top-block__color-item-active" for="">
+                                <input type="radio" checked>
+                                <span style="background-image: url(img/color/1.png)"></span>
+                            </label>
+                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/1.png)" class="configurator-top-block__color-item configurator-top-block__color-item-active">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/2.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/2.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/3.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/3.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/4.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/4.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/5.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/5.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/6.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/6.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/7.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/7.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/8.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/8.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/9.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/9.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/10.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/10.png)" class="configurator-top-block__color-item">
-                           </div>
-                        </div>
-                        <div class="col-lg-2 col-md-2 ">
-                           <div style="background-image: url(img/color/11.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/11.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2 col-md-3 ">
-                           <div style="background-image: url(img/color/12.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/12.png)"></span>
+                            </label>
                         </div>
                      </div>
                   </div>
@@ -1345,28 +1556,40 @@
                   <div class="configurator-top-block__color-wr mb-130">
                      <div class="row">
                         <div class="col-lg-2">
-                           <div style="background-image: url(img/color/13.png)" class="configurator-top-block__color-item configurator-top-block__color-item-active">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/13.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2">
-                           <div style="background-image: url(img/color/14.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/14.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2">
-                           <div style="background-image: url(img/color/15.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/15.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2">
-                           <div style="background-image: url(img/color/16.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/16.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2">
-                           <div style="background-image: url(img/color/17.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/17.png)"></span>
+                            </label>
                         </div>
                         <div class="col-lg-2">
-                           <div style="background-image: url(img/color/18.png)" class="configurator-top-block__color-item">
-                           </div>
+                            <label class="configurator-top-block__color-item" for="">
+                                <input type="radio">
+                                <span style="background-image: url(img/color/17.png)"></span>
+                            </label>
                         </div>
                      </div>
                   </div>
