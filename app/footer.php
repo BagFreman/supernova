@@ -124,7 +124,6 @@
 </div>
 
 <?php include 'component/modal-forms.php' ?>
-<?php include 'component/modal-slider.php' ?>
 
 </body>
 

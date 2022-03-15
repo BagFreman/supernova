@@ -110,7 +110,7 @@
                         Кокпит
                      </div>
                      <div class="configurator-top-block__all-radio">
-                        <div class="configurator-top-block__radio-item configurator-top-block__radio-item-active">
+                        <div class="configurator-top-block__radio-item">
                            <label class="radio">
                               <input type="radio" name="name" checked>
                               <span class="radio__radio"></span>
@@ -189,7 +189,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -279,7 +279,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -381,7 +381,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -471,7 +471,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -579,7 +579,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -669,7 +669,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -777,7 +777,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -867,7 +867,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -975,7 +975,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -1065,7 +1065,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -1173,7 +1173,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -1263,7 +1263,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -1472,7 +1472,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -1562,7 +1562,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -1670,7 +1670,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>
@@ -1760,7 +1760,7 @@
                         </div>
                      </div>
                      <div class="configurator-top-block__open-list border-none">
-                        <span>Открыть весь список</span>
+                        <span>Раскрыть полный список</span>
                         <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M9.48532 1.24264L5.24268 5.48528L1.00004 1.24264" stroke="#2D2B2B" stroke-width="2" stroke-linecap="round" />
                         </svg>

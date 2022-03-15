@@ -2659,6 +2659,8 @@
    @include media-breakpoint-down(md)
       width: auto
       margin: 0 rem(40px)
+   &__item
+      cursor: pointer
    &__block-white
       width: rem(1100px)
       height: rem(220px)
@@ -2940,11 +2942,8 @@
          &:hover
             background-color: #F3F8FC
             +tr
-   &__all-radio
-      height: rem(380px)
-      overflow: hidden
-   &__all-radio-active
-      height: auto
+   .active
+      display: block !important
    &__radio-item-active
       background-color: #F3F8FC
    &__open-list
@@ -3207,31 +3206,38 @@
    .modal-dialog
       max-width: rem(1200px)
    .modal-content
-      padding: rem(30px) !important
+      padding: rem(30px) rem(30px) rem(15px) rem(30px)  !important
+      @include media-breakpoint-down(md)
+         padding: rem(30px) rem(15px) rem(15px) rem(15px)  !important
+   .modal__close
+      right: rem(10px)
+      top: rem(5px)
    &__slide-item
       height: rem(635px)
+      @include media-breakpoint-down(md)
+         height: rem(500px)
+      @include media-breakpoint-down(sm)
+         height: rem(400px)
+      @include media-breakpoint-down(xs)
+         height: rem(250px)
       img
          +img-resp()
    .owl-nav
       position: absolute
       bottom: 0
       right: 0
-      @include media-breakpoint-down(md)
-         bottom: inherit
-         width: 100%
       button
          width: rem(100px)
          height: rem(60px)
          position: relative
          @include media-breakpoint-down(md)
-            background-color: inherit !important
-            width: auto
             img
                width: rem(30px)
+         @include media-breakpoint-down(xs)
+            width: rem(80px)
+            height: rem(40px)
       .owl-prev, .owl-next
          background-color: #ECEFF5 !important
-         @include media-breakpoint-down(md)
-            background-color: inherit !important
    .owl-slider-btn
       margin-top: rem(20px)
       &__item
@@ -3252,3 +3258,11 @@
          .col-lg-2
             padding-right: 5px
             padding-left: 5px
+
+.modal-certificates
+   .modal-dialog
+      max-width: rem(700px) !important
+   .modal-slider__slide-item
+      height: rem(900px)
+      @include media-breakpoint-down(xs)
+         height: rem(500px)

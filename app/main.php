@@ -268,16 +268,7 @@
          </div>
          <div class="col-lg-7">
             <div class="owl-carousel owl-theme design-slide">
-               <div class="design-slide__img">
-                  <div class="design-slide__pl d-none d-lg-block" data-toggle="modal" data-target="#modal-slider">
-                     <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
-                        <path d="M21.2617 18.2703L27.2017 22.2303" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                     </svg>
-                  </div>
-                  <img src="img/section-design/section-design-1.png" alt="">
-               </div>
-               <div class="design-slide__img">
+               <div class="design-slide__img" data-toggle="modal" data-target="#modal-slider">
                   <div class="design-slide__pl d-none d-lg-block">
                      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
@@ -286,7 +277,7 @@
                   </div>
                   <img src="img/section-design/section-design-1.png" alt="">
                </div>
-               <div class="design-slide__img">
+               <div class="design-slide__img" data-toggle="modal" data-target="#modal-slider">
                   <div class="design-slide__pl d-none d-lg-block">
                      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
@@ -295,7 +286,7 @@
                   </div>
                   <img src="img/section-design/section-design-1.png" alt="">
                </div>
-               <div class="design-slide__img">
+               <div class="design-slide__img" data-toggle="modal" data-target="#modal-slider">
                   <div class="design-slide__pl d-none d-lg-block">
                      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
@@ -304,7 +295,7 @@
                   </div>
                   <img src="img/section-design/section-design-1.png" alt="">
                </div>
-               <div class="design-slide__img">
+               <div class="design-slide__img" data-toggle="modal" data-target="#modal-slider">
                   <div class="design-slide__pl d-none d-lg-block">
                      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
@@ -313,7 +304,7 @@
                   </div>
                   <img src="img/section-design/section-design-1.png" alt="">
                </div>
-               <div class="design-slide__img">
+               <div class="design-slide__img" data-toggle="modal" data-target="#modal-slider">
                   <div class="design-slide__pl d-none d-lg-block">
                      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
@@ -322,7 +313,16 @@
                   </div>
                   <img src="img/section-design/section-design-1.png" alt="">
                </div>
-               <div class="design-slide__img">
+               <div class="design-slide__img" data-toggle="modal" data-target="#modal-slider">
+                  <div class="design-slide__pl d-none d-lg-block">
+                     <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
+                        <path d="M21.2617 18.2703L27.2017 22.2303" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                     </svg>
+                  </div>
+                  <img src="img/section-design/section-design-1.png" alt="">
+               </div>
+               <div class="design-slide__img" data-toggle="modal" data-target="#modal-slider">
                   <div class="design-slide__pl d-none d-lg-block">
                      <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12.3508" cy="12.0002" r="10.55" stroke="white" stroke-width="2" />
@@ -332,6 +332,55 @@
                   <img src="img/section-design/section-design-1.png" alt="">
                </div>
             </div>
+            <div class="modal fade modal-slider" id="modal-slider" tabindex="-1" aria-hidden="true">
+                 <div class="modal-dialog">
+                     <div class="modal-content">
+                         <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                             <svg width="14" height="14" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M1 1.5L15 15.5M1 15.5L15 1.5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" />
+                             </svg>
+                         </div>
+                         <div class="owl-carousel owl-theme modal-slider__slide">
+                             <div class="modal-slider__slide-item">
+                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-1" alt="">
+                             </div>
+                             <div class="modal-slider__slide-item">
+                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-2" alt="">
+                             </div>
+                             <div class="modal-slider__slide-item">
+                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-3" alt="">
+                             </div>
+                             <div class="modal-slider__slide-item">
+                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-4" alt="">
+                             </div>
+                         </div>
+                         <div class="owl-slider-btn d-none d-lg-block">
+                             <div class="row">
+                                 <div class="col-lg-2">
+                                     <a href="#t-service-1" class="owl-slider-btn__item owl-slider-btn__active">
+                                         <img src="img/section-design/section-design-1.png" alt="">
+                                     </a>
+                                 </div>
+                                 <div class="col-lg-2">
+                                     <a href="#t-service-2" class="owl-slider-btn__item">
+                                         <img src="img/section-design/section-design-1.png" alt="">
+                                     </a>
+                                 </div>
+                                 <div class="col-lg-2">
+                                     <a href="#t-service-3" class="owl-slider-btn__item">
+                                         <img src="img/section-design/section-design-1.png" alt="">
+                                     </a>
+                                 </div>
+                                 <div class="col-lg-2">
+                                     <a href="#t-service-4" class="owl-slider-btn__item">
+                                         <img src="img/section-design/section-design-1.png" alt="">
+                                     </a>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
             <div class="section-production__btn d-lg-none">
                <a href="" class="btn">Перейти в аксессуары</a>
             </div>
@@ -348,7 +397,6 @@
       </div>
 
       <div class="container">
-         <div class="row"></div>
          <div class="offset-lg-5 col-lg-7">
             <div class="form-online__wr-2">
                <div class="section-title">

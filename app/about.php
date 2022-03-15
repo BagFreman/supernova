@@ -194,27 +194,27 @@
          </div>
          <div class="col-lg-6">
             <div class="owl-carousel owl-theme service-certificates">
-               <div class="service-certificates__item">
+               <div class="service-certificates__item" data-toggle="modal" data-target="#modal-slider">
                   <div class="service-certificates__img">
                      <img src="img/section-certificates/section-certificates-1.jpg" alt="">
                   </div>
                </div>
-               <div class="service-certificates__item">
+               <div class="service-certificates__item" data-toggle="modal" data-target="#modal-slider">
                   <div class="service-certificates__img">
                      <img src="img/section-certificates/section-certificates-2.jpg" alt="">
                   </div>
                </div>
-               <div class="service-certificates__item">
+               <div class="service-certificates__item" data-toggle="modal" data-target="#modal-slider">
                   <div class="service-certificates__img">
                      <img src="img/section-certificates/section-certificates-3.jpg" alt="">
                   </div>
                </div>
-               <div class="service-certificates__item">
+               <div class="service-certificates__item" data-toggle="modal" data-target="#modal-slider">
                   <div class="service-certificates__img">
                      <img src="img/section-certificates/section-certificates-1.jpg" alt="">
                   </div>
                </div>
-               <div class="service-certificates__item">
+               <div class="service-certificates__item" data-toggle="modal" data-target="#modal-slider">
                   <div class="service-certificates__img">
                      <img src="img/section-certificates/section-certificates-2.jpg" alt="">
                   </div>
@@ -222,6 +222,29 @@
             </div>
             <div class="service-certificates__block-white"></div>
          </div>
+          <div class="modal fade modal-slider modal-certificates" id="modal-slider" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                          <svg width="14" height="14" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1 1.5L15 15.5M1 15.5L15 1.5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" />
+                          </svg>
+                      </div>
+                      <div class="owl-carousel owl-theme modal-slider__slide">
+                          <div class="modal-slider__slide-item">
+                              <img src="img/section-certificates/section-certificates-1.jpg" alt="">
+                          </div>
+                          <div class="modal-slider__slide-item">
+                              <img src="img/section-certificates/section-certificates-2.jpg" alt="">
+                          </div>
+                          <div class="modal-slider__slide-item">
+                              <img src="img/section-certificates/section-certificates-3.jpg" alt="">
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
       </div>
    </div>
 </section>
