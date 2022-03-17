@@ -411,9 +411,47 @@ $(function () {
 
     // ** Basket  
 
-    $('.configurator-top-block__block').each(function () {
+    $('.configurator-top-block__radio-item').on('click', function () {
 
-        $(this).find('.text').each(function () {
+        let id = $(this).closest('.configurator-top-block__block').data('id');
+        let name = $(this).find('.text').text();
+        let price = $(this).find('.price').text();
+
+        $('.configurator-top-block__list-item').each(function () {
+
+            $(this).find('.configurator-top-block__list-option').each(function () {
+
+                let enId = $(this).data('id');
+
+                if (id === enId) {
+                    $(this).find('.text').text(name);
+                    $(this).find('.price').text(price);
+                }
+
+            });
+
+        });
+
+    });
+
+    $('.configurator-top-block__color-item').on('click', function () {
+
+        let colorName = $(this).find('input').val();
+        let color = $(this).find('.color').attr('style');
+        let price = $(this).closest('.configurator-top-block__color-wr').prev().find('.configurator-top-block__title-price').text();
+        let id = $(this).closest('.configurator-top-block__color-wr').data('id');
+
+        $('.configurator-top-block__list-item-color .configurator-top-block__list-option').each(function () {
+
+            let enId = $(this).data('id');
+
+            console.log(enId);
+
+            if (id === enId) {
+                $(this).find('.text').text(colorName);
+                $(this).find('.price').text(price);
+                $(this).find('.configurator-top-block__list-color').attr('style', color);
+            }
 
         });
 
