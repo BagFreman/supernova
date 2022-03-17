@@ -329,15 +329,10 @@ $(function () {
         updateConfiguration.change();
     });
 
-    $('.configurator-top-block__color-item').on('click', function () {
-        $(this).closest('.configurator-top-block__color-wr').find('.configurator-top-block__color-item-active').removeClass('configurator-top-block__color-item-active');
-        $(this).addClass('configurator-top-block__color-item-active');
-    });
-
     $('.services__item').on('click', function () {
-       let a =  $(this).find('.services__title').text();
-       $('#modal-service').find('.modal__title').text(a);
-       $('#modal-service').find('.input-service-name').val(a);
+        let a = $(this).find('.services__title').text();
+        $('#modal-service').find('.modal__title').text(a);
+        $('#modal-service').find('.input-service-name').val(a);
     });
 
     // ** Slide
@@ -349,7 +344,7 @@ $(function () {
         mouseDrag: false,
         nav: true,
         smartSpeed: 400,
-        URLhashListener:true,
+        URLhashListener: true,
         startPosition: 'URLHash',
         navText: ['<img src="/img/icon/arrow-slider-left.svg" alt="">', '<img src="/img/icon/arrow-slider-right.svg" alt="">'],
         responsive: {
@@ -371,7 +366,7 @@ $(function () {
         $('.owl-slider-btn .col-lg-2').find('.owl-slider-btn__active').closest('.col-lg-2').next().find('.owl-slider-btn__item').removeClass('owl-slider-btn__active');
     });
 
-    $('.owl-slider-btn__item').on('click', function() {
+    $('.owl-slider-btn__item').on('click', function () {
         $(this).closest('.owl-slider-btn').find('.owl-slider-btn__active').removeClass('owl-slider-btn__active');
         $(this).addClass('owl-slider-btn__active');
         $('.modal-slider__slide').trigger('refresh.owl.carousel');
@@ -382,7 +377,7 @@ $(function () {
     //  ** Скрыть список
 
     $('.configurator-top-block__all-radio').each(function () {
-       $(this).find('.configurator-top-block__radio-item').slice(3).hide();
+        $(this).find('.configurator-top-block__radio-item').slice(3).hide();
     });
 
     $('.configurator-top-block__open-list').on('click', function () {
@@ -402,7 +397,7 @@ $(function () {
         margin: 1,
         nav: true,
         smartSpeed: 400,
-        URLhashListener:true,
+        URLhashListener: true,
         startPosition: 'URLHash',
         navText: ['<img src="/img/icon/tool-ar-left.svg" alt="">', '<img src="/img/icon/tool-ar-right.svg" alt="">'],
         responsive: {
@@ -413,5 +408,18 @@ $(function () {
     });
 
     // ** End tooltip
+
+    // ** Basket  
+
+    $('.configurator-top-block__block').each(function () {
+
+        $(this).find('.text').each(function () {
+
+        });
+
+    });
+
+
+    // ** End Basket
 
 });

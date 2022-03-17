@@ -223,13 +223,13 @@
          <div class="col-lg-5">
             <div class="section-production__wr">
                <div class="section-production__logo">
-                  <img src="img/block-product.png" alt="">
+                  <img src="img/logo.png" alt="">
                </div>
                <h3 class="section-title">
                   Это современное производство
                </h3>
                <div class="section-production__text">
-                  Завод SUPERNOVA находится в Чистополе, на реке Кама, в 100 км от Казани.
+                  Завод SEARENE находится в Чистополе, на реке Кама, в 100 км от Казани.
                   Здесь из прочного и легкого стеклопластика и композитных материалов
                   производятся лодки с современным дизайном.
                </div>
@@ -333,54 +333,54 @@
                </div>
             </div>
             <div class="modal fade modal-slider" id="modal-slider" tabindex="-1" aria-hidden="true">
-                 <div class="modal-dialog">
-                     <div class="modal-content">
-                         <div class="modal__close" data-dismiss="modal" aria-label="Close">
-                             <svg width="14" height="14" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                 <path d="M1 1.5L15 15.5M1 15.5L15 1.5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" />
-                             </svg>
-                         </div>
-                         <div class="owl-carousel owl-theme modal-slider__slide">
-                             <div class="modal-slider__slide-item">
-                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-1" alt="">
-                             </div>
-                             <div class="modal-slider__slide-item">
-                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-2" alt="">
-                             </div>
-                             <div class="modal-slider__slide-item">
-                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-3" alt="">
-                             </div>
-                             <div class="modal-slider__slide-item">
-                                 <img src="img/section-design/section-design-1.png" data-hash="t-service-4" alt="">
-                             </div>
-                         </div>
-                         <div class="owl-slider-btn d-none d-lg-block">
-                             <div class="row">
-                                 <div class="col-lg-2">
-                                     <a href="#t-service-1" class="owl-slider-btn__item owl-slider-btn__active">
-                                         <img src="img/section-design/section-design-1.png" alt="">
-                                     </a>
-                                 </div>
-                                 <div class="col-lg-2">
-                                     <a href="#t-service-2" class="owl-slider-btn__item">
-                                         <img src="img/section-design/section-design-1.png" alt="">
-                                     </a>
-                                 </div>
-                                 <div class="col-lg-2">
-                                     <a href="#t-service-3" class="owl-slider-btn__item">
-                                         <img src="img/section-design/section-design-1.png" alt="">
-                                     </a>
-                                 </div>
-                                 <div class="col-lg-2">
-                                     <a href="#t-service-4" class="owl-slider-btn__item">
-                                         <img src="img/section-design/section-design-1.png" alt="">
-                                     </a>
-                                 </div>
-                             </div>
-                         </div>
+               <div class="modal-dialog">
+                  <div class="modal-content">
+                     <div class="modal__close" data-dismiss="modal" aria-label="Close">
+                        <svg width="14" height="14" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M1 1.5L15 15.5M1 15.5L15 1.5" stroke="#C2C2C2" stroke-width="2" stroke-linecap="round" />
+                        </svg>
                      </div>
-                 </div>
-             </div>
+                     <div class="owl-carousel owl-theme modal-slider__slide">
+                        <div class="modal-slider__slide-item">
+                           <img src="img/section-design/section-design-1.png" data-hash="t-service-1" alt="">
+                        </div>
+                        <div class="modal-slider__slide-item">
+                           <img src="img/section-design/section-design-1.png" data-hash="t-service-2" alt="">
+                        </div>
+                        <div class="modal-slider__slide-item">
+                           <img src="img/section-design/section-design-1.png" data-hash="t-service-3" alt="">
+                        </div>
+                        <div class="modal-slider__slide-item">
+                           <img src="img/section-design/section-design-1.png" data-hash="t-service-4" alt="">
+                        </div>
+                     </div>
+                     <div class="owl-slider-btn d-none d-lg-block">
+                        <div class="row">
+                           <div class="col-lg-2">
+                              <a href="#t-service-1" class="owl-slider-btn__item owl-slider-btn__active">
+                                 <img src="img/section-design/section-design-1.png" alt="">
+                              </a>
+                           </div>
+                           <div class="col-lg-2">
+                              <a href="#t-service-2" class="owl-slider-btn__item">
+                                 <img src="img/section-design/section-design-1.png" alt="">
+                              </a>
+                           </div>
+                           <div class="col-lg-2">
+                              <a href="#t-service-3" class="owl-slider-btn__item">
+                                 <img src="img/section-design/section-design-1.png" alt="">
+                              </a>
+                           </div>
+                           <div class="col-lg-2">
+                              <a href="#t-service-4" class="owl-slider-btn__item">
+                                 <img src="img/section-design/section-design-1.png" alt="">
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
             <div class="section-production__btn d-lg-none">
                <a href="" class="btn">Перейти в аксессуары</a>
             </div>
@@ -419,8 +419,42 @@
          </div>
       </div>
    </div>
-
 </section>
+
+<script>
+   $('.boat-slide, .test-drive-slide').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: true,
+      smartSpeed: 400,
+      navText: ['<img src="img/icon/arrow-slider-left.svg" alt="">', '<img src="img/icon/arrow-slider-right.svg" alt="">'],
+      responsive: {
+         0: {
+            items: 1
+         },
+         600: {
+            items: 1
+         },
+         1000: {
+            items: 1
+         }
+      }
+   })
+
+   let boatModalNumber = 0;
+   let boatModal = [
+      'A34',
+      'F35',
+      'S36',
+      'G37',
+      'V67'
+   ]
+
+   $('.boat-slide .owl-dot, .test-drive-slide .owl-dot').each(function() {
+      $(this).find('span').html(boatModal[boatModalNumber]);
+      boatModalNumber++;
+   });
+</script>
 
 <?php include 'component/services.php' ?>
 <?php include 'component/block-contact-form.php' ?>
