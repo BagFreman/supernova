@@ -458,6 +458,25 @@ $(function () {
     });
 
 
+
+    let fullPrice = 0;
+
+    $('.configurator-top-block__list-item .price').each(function () {
+
+        let a = $(this).text();
+
+        a = a.replace(/[₽]/gi, '');
+        a = a.replace(/\s+/g, '');
+        a = Number(a);
+
+        fullPrice = fullPrice + a;
+
+        ++i;
+
+    });
+
+    $('.configurator-top-block__sum-text').text(triplets(fullPrice) + ' ₽')
+
     // ** End Basket
 
 });

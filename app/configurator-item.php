@@ -2014,11 +2014,11 @@
                         </div>
                         <div class="configurator-top-block__list-option" data-id="1">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">767 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option" data-id="2">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">765 000 ₽</span>
                         </div>
                      </div>
                      <div class="configurator-top-block__list-item">
@@ -2027,11 +2027,11 @@
                         </div>
                         <div class="configurator-top-block__list-option" data-id="3">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">776 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option" data-id="4">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">757 000 ₽</span>
                         </div>
                      </div>
                      <div class="configurator-top-block__list-item">
@@ -2040,11 +2040,11 @@
                         </div>
                         <div class="configurator-top-block__list-option" data-id="5">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">765 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option" data-id="6">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">734 000 ₽</span>
                         </div>
                      </div>
                      <div class="configurator-top-block__list-item">
@@ -2053,11 +2053,11 @@
                         </div>
                         <div class="configurator-top-block__list-option" data-id="7">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">723 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option" data-id="8">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">723 000 ₽</span>
                         </div>
                      </div>
                      <div class="configurator-top-block__list-item">
@@ -2066,11 +2066,11 @@
                         </div>
                         <div class="configurator-top-block__list-option" data-id="9">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">705 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option" data-id="10">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">732 000 ₽</span>
                         </div>
                      </div>
                      <div class="configurator-top-block__list-item configurator-top-block__list-item-color">
@@ -2094,11 +2094,11 @@
                         </div>
                         <div class="configurator-top-block__list-option">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">752 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">753 000 ₽</span>
                         </div>
                      </div>
                      <div class="configurator-top-block__list-item">
@@ -2107,11 +2107,11 @@
                         </div>
                         <div class="configurator-top-block__list-option">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">754 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">751 000 ₽</span>
                         </div>
                      </div>
                      <div class="configurator-top-block__list-item">
@@ -2120,11 +2120,11 @@
                         </div>
                         <div class="configurator-top-block__list-option" data-id="15">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">756 000 ₽</span>
                         </div>
                         <div class="configurator-top-block__list-option">
                            <span class="text">Носовое сиденье с рундуком</span>
-                           <span class="price">750 000 ₽</span>
+                           <span class="price">757 000 ₽</span>
                         </div>
                      </div>
                   </div>
