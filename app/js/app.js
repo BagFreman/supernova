@@ -411,6 +411,40 @@ $(function () {
 
     // ** Basket  
 
+    function updatePrice() {
+
+        let fullPrice = 0;
+        let basePrice = $('.base-price span').text();
+
+        basePrice = basePrice.replace(/[₽]/gi, '');
+        basePrice = basePrice.replace(/\s+/g, '');
+        basePrice = Number(basePrice);
+
+        $('.configurator-top-block__list-item .price').each(function () {
+
+            let a = $(this).text();
+
+            a = a.replace(/[₽]/gi, '');
+            a = a.replace(/\s+/g, '');
+            a = Number(a);
+
+            fullPrice = fullPrice + a;
+
+            ++i;
+
+        });
+
+        $('.configurator-top-block__sum-text').text(triplets(fullPrice) + ' ₽');
+        $('.option-price span').text(triplets(fullPrice) + ' ₽');
+        $('.configurator-inf__price span').text(triplets(fullPrice + basePrice) + ' ₽');
+
+        // ** End Basket
+
+    }
+
+    updatePrice();
+
+
     $('.configurator-top-block__radio-item').on('click', function () {
 
         let id = $(this).closest('.configurator-top-block__block').data('id');
@@ -430,7 +464,20 @@ $(function () {
 
             });
 
+            $('.configurator-inf__detail-option-item').each(function () {
+
+                let enId = $(this).data('id');
+
+                if (id === enId) {
+                    $(this).find('.text').text(name);
+                    $(this).find('.price').text(price);
+                }
+
+            });
+
         });
+
+        updatePrice();
 
     });
 
@@ -453,30 +500,27 @@ $(function () {
                 $(this).find('.configurator-top-block__list-color').attr('style', color);
             }
 
+            $('.configurator-inf__detail-option-item').each(function () {
+
+                let enId = $(this).data('id');
+
+                if (id === enId) {
+                    $(this).find('.text').text(colorName);
+                    $(this).find('.price').text(price);
+                }
+
+            });
+
         });
 
-    });
-
-
-
-    let fullPrice = 0;
-
-    $('.configurator-top-block__list-item .price').each(function () {
-
-        let a = $(this).text();
-
-        a = a.replace(/[₽]/gi, '');
-        a = a.replace(/\s+/g, '');
-        a = Number(a);
-
-        fullPrice = fullPrice + a;
-
-        ++i;
+        updatePrice();
 
     });
 
-    $('.configurator-top-block__sum-text').text(triplets(fullPrice) + ' ₽')
+    $('.option-price').on('click', function () {
+        $(this).next().toggle();
+        $(this).toggleClass('option-price__active');
+    });
 
-    // ** End Basket
 
 });

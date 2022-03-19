@@ -1471,78 +1471,78 @@
                   </div>
                </div>
                <div data-block="7" style="display: none" class="configurator-top-block">
-                  <div class="configurator-top-block__title">
+                  <div class="configurator-top-block__title configurator-top-block__title-color">
                      Выберите цвет корпуса <span class="info">?</span><span class="configurator-top-block__title-price">130 000 ₽</span>
                   </div>
                   <div class="configurator-top-block__color-wr" data-id="21">
                      <div class="row">
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad" checked>
                               <span class="color" style="background-image: url(img/color/1.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2 ">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/2.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/3.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/4.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/5.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/6.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/7.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/8.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/9.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/10.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/11.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2 col-md-3">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input value="белый" type="radio" name="ad">
                               <span class="color" style="background-image: url(img/color/12.png)"></span>
@@ -1550,42 +1550,42 @@
                         </div>
                      </div>
                   </div>
-                  <div class="configurator-top-block__title">
+                  <div class="configurator-top-block__title configurator-top-block__title-2 configurator-top-block__title-color">
                      Выберите окраску ниже привального бруса <span class="info">?</span><span class="configurator-top-block__title-price">150 000 ₽</span>
                   </div>
                   <div class="configurator-top-block__color-wr mb-130" data-id="22">
                      <div class="row">
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input type="radio" value="белый" name="ads" checked>
                               <span class="color" style="background-image: url(img/color/13.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input type="radio" value="белый" name="ads">
                               <span class="color" style="background-image: url(img/color/14.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input type="radio" value="белый" name="ads">
                               <span class="color" style="background-image: url(img/color/15.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input type="radio" value="белый" name="ads">
                               <span class="color" style="background-image: url(img/color/16.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input type="radio" value="белый" name="ads">
                               <span class="color" style="background-image: url(img/color/17.png)"></span>
                            </label>
                         </div>
-                        <div class="col-lg-2">
+                        <div class="col-lg-2 col-md-2 col-sm-2 col-3">
                            <label class="configurator-top-block__color-item">
                               <input type="radio" value="белый" name="ads">
                               <span class="color" style="background-image: url(img/color/17.png)"></span>
@@ -2162,14 +2162,28 @@
                      </ul>
                   </div>
                   <div class="configurator-inf__detail">
-                     <div class="configurator-inf__detail-item">
+                     <div class="configurator-inf__detail-item base-price">
                         Базовая стоимость: <span>1 320 000 ₽</span>
                      </div>
-                     <div class="configurator-inf__detail-item">
+                     <div class="configurator-inf__detail-item option-price">
                         <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path d="M6.65655 0.828427L3.82812 3.65685L0.999698 0.828427" stroke="black" />
                         </svg>
                         Стоимость опций: <span>320 000 ₽</span>
+                     </div>
+                     <div class="configurator-inf__detail-option">
+                        <div class="configurator-inf__detail-option-item" data-id="1">
+                           <span class="text">Носовое сиденье с рундуком1</span>
+                           <span class="price">1 320 000 ₽</span>
+                        </div>
+                        <div class="configurator-inf__detail-option-item" data-id="2">
+                           <span class="text">Носовое сиденье с рундуком1</span>
+                           <span class="price">1 320 000 ₽</span>
+                        </div>
+                        <div class="configurator-inf__detail-option-item" data-id="21">
+                           <span class="text">Носовое сиденье с рундуком1</span>
+                           <span class="price">1 320 000 ₽</span>
+                        </div>
                      </div>
                   </div>
                   <div class="configurator-inf__price">

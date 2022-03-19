@@ -2900,6 +2900,15 @@
       border-bottom: 1px solid #DBE3EC
       @include media-breakpoint-down(sm)
          margin: 0 rem(15px)
+   &__title-2
+      @include media-breakpoint-down(md)
+         margin-top: rem(20px)
+   &__title-color
+      @include media-breakpoint-down(sm)
+         position: relative
+         .configurator-top-block__title-price
+            float: initial
+            display: block
    &__block-title
       padding-top: rem(25px)
       padding-bottom: rem(15px)
@@ -2922,8 +2931,8 @@
          position: absolute
          top: rem(45px)
          @include media-breakpoint-down(sm)
-            position: relative
-            top: 0
+            position: absolute
+            top: rem(23px)
       .radio__text
          left: rem(50px)
          top: rem(8px)
@@ -2933,6 +2942,7 @@
             left: 0
             top: 0
             position: initial
+            padding-left: rem(33px)
    .active
       display: block !important
    &__radio-item-active
@@ -2949,6 +2959,7 @@
       +tr
       @include media-breakpoint-down(sm)
          margin: 0 rem(20px)
+         padding-bottom: rem(15px)
       svg
          margin-left: rem(5px)
       &:hover
@@ -3043,12 +3054,25 @@
          height: rem(50px)
       @media screen and ( max-width: 1100px )
          height: rem(40px)
+      @include media-breakpoint-down(md)
+         height: rem(90px)
+      @include media-breakpoint-down(sm)
+         height: rem(70px)
+      @include media-breakpoint-down(xs)
+         height: rem(80px)
+      @media screen and ( max-width: 420px )
+         height: rem(60px)
+      @media screen and ( max-width: 390px )
+         height: rem(50px)
       input
          display: none
       span
          width: 100%
          height: 100%
          display: inline-block
+         background-position: top left
+         background-size: cover
+         background-repeat: no-repeat
       input:checked + span
          border: 6px solid $blue
    .btn-border-m
@@ -3151,7 +3175,7 @@
          float: right
          font-size: rem(14px)
          font-family: $font-bold
-         @media screen and ( max-width: 1100px )
+         @media screen and ( max-width: 1250px )
             display: block
             float: inherit
    &__detail-item:nth-last-child(1)
@@ -3169,6 +3193,25 @@
          padding: rem(15px) rem(20px)
          @media screen and ( max-width: 1150px )
             font-size: rem(14px)
+   &__detail-option
+      .configurator-inf__detail-item
+         border-top: none
+      .configurator-inf__detail-item:nth-last-child(1)
+         border-bottom: none
+   .option-price
+      cursor: pointer
+      border-bottom: 1px solid #E0E6EC
+   .option-price__active
+      svg
+         transform: rotate(180deg)
+   &__detail-option-item
+      font-size: rem(13px)
+      padding: rem(12px) 0 0 0
+      span
+         display: block
+      span.price
+         font-size: rem(14px)
+         font-family: $font-bold
 
 .modal-order
    .configurator-inf__option li
@@ -3182,6 +3225,8 @@
 
 .mb-130
    margin-bottom: rem(130px)
+   @include media-breakpoint-down(sm)
+      margin-bottom: rem(30px)
 
 .error-page
    text-align: center
@@ -3320,6 +3365,11 @@
       opacity: 0
       transform: translateY(-20px)
       +tr
+      @include media-breakpoint-down(sm)
+         left: initial
+         right: rem(-22px)
+      @include media-breakpoint-down(xs)
+         width: rem(280px)
       &::before
          content: ""
          position: absolute
@@ -3331,6 +3381,9 @@
          border-bottom: 10px solid transparent
          border-right: 15px solid #fff
          transform: rotate(270deg)
+         @include media-breakpoint-down(sm)
+            left: initial
+            right: rem(18px)
    .info-tooltip__title
       margin-top: rem(15px)
       margin-bottom: rem(5px)
@@ -3345,6 +3398,8 @@
 .info-slider
    &__slide-item
       height: rem(170px)
+      @include media-breakpoint-down(xs)
+         height: rem(120px)
    .owl-nav
       position: absolute
       right: 0
