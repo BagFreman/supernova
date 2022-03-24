@@ -22,7 +22,7 @@ $(function () {
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "mail.php",
+            url: "https://searene.bikstart.ru/mail.php",
             data: th.serialize()
         }).done(function () {
             $('.modal__open').css('display', 'none');
@@ -219,7 +219,7 @@ $(function () {
                 iconContent: '12'
             }, {
                 iconLayout: 'default#imageWithContent',
-                iconImageHref: 'img/location.png',
+                iconImageHref: '/img/location.png',
                 iconImageSize: [53, 76],
                 iconImageOffset: [-24, -24],
                 iconContentOffset: [15, 15],
@@ -235,7 +235,7 @@ $(function () {
         var th = $(this);
         $.ajax({
             type: "POST",
-            url: "mail.php", //Change
+            url: "https://searene.bikstart.ru/mail.php", //Change
             data: th.serialize()
         }).done(function () {
             $('.modal__open').css('display', 'none');
@@ -389,25 +389,7 @@ $(function () {
 
     // ** End скрыть список
 
-    // ** tooltip
 
-    $('.info-slider').owlCarousel({
-        loop: false,
-        dots: false,
-        margin: 1,
-        nav: true,
-        smartSpeed: 400,
-        URLhashListener: true,
-        startPosition: 'URLHash',
-        navText: ['<img src="/img/icon/tool-ar-left.svg" alt="">', '<img src="/img/icon/tool-ar-right.svg" alt="">'],
-        responsive: {
-            0: {
-                items: 1
-            }
-        }
-    });
-
-    // ** End tooltip
 
     // ** Basket  
 

@@ -3323,8 +3323,8 @@
    color: #fff
    position: relative
    z-index: 2
-   margin-left: 10px
-   margin-right: 10px
+   margin-left: rem(20px)
+   margin-right: rem(10px)
    &:hover
       .info-tooltip
          visibility: visible
@@ -3339,8 +3339,8 @@
          background-color: $red
    &::after
       content: ''
-      width: 20px
-      height: 20px
+      width: rem(20px)
+      height: rem(20px)
       background-color: #A1C4DC
       position: absolute
       z-index: -1
@@ -3394,6 +3394,11 @@
       line-height: 134.5%
       color: #9AA7B4
       font-family: $font-light
+   span:nth-child(1)
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
 
 .info-slider
    &__slide-item

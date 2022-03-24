@@ -2200,6 +2200,25 @@
 
 </div>
 
+<script>
+   // ** tooltip
+
+   $('.info-slider').owlCarousel({
+      loop: false,
+      dots: false,
+      margin: 1,
+      nav: true,
+      navText: ['<img src="img/icon/tool-ara-left.svg" alt="">', '<img src="img/icon/tool-ara-right.svg" alt="">'],
+      responsive: {
+         0: {
+            items: 1
+         }
+      }
+   });
+
+   // ** End tooltip
+</script>
+
 <?php include 'component/block-contact-form.php' ?>
 <?php include 'component/block-contact.php' ?>
 <?php include 'footer.php' ?>
