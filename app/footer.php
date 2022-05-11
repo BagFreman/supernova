@@ -43,7 +43,7 @@
                </div>
             </div>
 
-            <a href="mailto:Supernova123@mail.ru" class="footer__mail">Supernova123@mail.ru</a>
+            <a href="mailto:Searene123@mail.ru" class="footer__mail">Searene123@mail.ru</a>
 
          </div>
          <div class="col-lg-7">
@@ -52,7 +52,7 @@
 
                <div class="footer__menu">
                   <div class="footer__menu-title">
-                     Supernova
+                     Searene
                   </div>
                   <ul class="footer__menu-nav">
                      <li class="footer__menu-item"><a class="footer__menu-link" href="">Конфигуратор</a></li>
