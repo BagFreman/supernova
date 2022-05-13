@@ -456,6 +456,8 @@
    });
 </script>
 
+<?php include 'component/modal-fix.php' ?>
+
 <?php include 'component/services.php' ?>
 <?php include 'component/block-contact-form.php' ?>
 <?php include 'component/block-contact.php' ?>
