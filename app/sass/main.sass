@@ -3491,16 +3491,13 @@
       left: 50%
       transform: translate(-50%, -50%)
       opacity: .1
-      @media screen and ( max-width: 1200px )
-         padding: 0 rem(50px)
+      width: 100%
+      height: auto
+      padding: 0 rem(50px)
       @include media-breakpoint-down(md)
          padding: 0 rem(20px)
       img
          +img-resp()
-      @media screen and ( max-width: 1200px )
-         width: 100%
-         height: auto
-         img
    &__btn
       &:hover
          color: #fff
